@@ -337,6 +337,7 @@
   text-transform: uppercase;
   border-radius: 0.3em;
   width: 33.3333%;
+  align-items: center;
 }
 
 .game .game-container-middle-roll-title, .game .game-container-middle-payout-title, .game .game-container-middle-chance-title {
