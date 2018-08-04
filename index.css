@@ -209,6 +209,7 @@
   height: 100%;
   text-align: center;
   color: #9b9fae;
+  cursor: not-allowed;
 }
 
 .game .nav-item .nav-link.active {
