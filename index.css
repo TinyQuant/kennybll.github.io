@@ -432,7 +432,7 @@
   position: relative;
   text-align: center;
   top: 50%;
-  z-index: 1;
+  z-index: 3;
   align-items: center;
 }
 
