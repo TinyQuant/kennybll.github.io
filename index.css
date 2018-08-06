@@ -418,6 +418,7 @@
   height: 10px;
   margin-top: 40px;
   border-radius: 5px;
+  border: none;
 }
 
 .game #slider #custom-handle {
