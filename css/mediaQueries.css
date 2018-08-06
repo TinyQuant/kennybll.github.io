@@ -1,0 +1,24 @@
+@media (max-width: 305px) {
+  .navbar-fairness {
+    display: none !important;
+  }
+}
+
+@media (max-width: 415px) {
+  .navbar-community {
+    display: none !important;
+  }
+}
+
+@media (max-width: 475px) {
+  .navbar-faq {
+    display: none !important;
+  }
+}
+
+@media (max-width: 588px) {
+  .navbar-refferals {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=mediaQueries.css.map */

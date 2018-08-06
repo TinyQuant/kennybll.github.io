@@ -1,0 +1,12 @@
+@import './base.scss';
+
+* {
+  font-family: $font-family;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease-in-out;
+}
+
+.flex-fill-1 {
+  flex: 1 !important;
+}
