@@ -10,12 +10,6 @@
   }
 }
 
-@media (max-width: 475px) {
-  .navbar-faq {
-    display: none !important;
-  }
-}
-
 @media (max-width: 500px) {
   .game-container-top-bet-balance, .game-container-top-space {
     display: none !important;
@@ -56,8 +50,8 @@
   }
 }
 
-@media (max-width: 588px) {
-  .navbar-refferals {
+@media (max-width: 535px) {
+  .navbar-faq {
     display: none !important;
   }
 }
@@ -98,6 +92,9 @@
 @media (max-width: 655px) {
   .navbar-coin {
     display: none;
+  }
+  .navbar-refferals {
+    display: none !important;
   }
 }
 
