@@ -92,11 +92,11 @@
           </div>
         </div>
         <div class="game-container-middle">
-          <span>1</span>
+          <span>96</span>
           <div class="game-container-middle-slider">
             <div class="game-container-middle-slider-range"></div>
           </div>
-          <span>99</span>
+          <span>2</span>
         </div>
         <div class="game-container-right">
           <div class="game-container-right-top">
@@ -180,13 +180,13 @@
       $(".game-container-middle-slider").slider({
         orientation: "vertical",
         value: 27,
-        max: 99,
-        min: 1,
+        max: 96,
+        min: 2,
         slide: function (event, ui) {
           if(window.innerWidth <= 500) {
             green.css('width', 100 - ui.value + '%');
           } else {
-            green.css('height', 100 - ui.value + '%');
+            green.css('height', ui.value + '%');
           }
         }
       });
@@ -202,9 +202,11 @@
       window.onresize = function() {
         if(window.innerWidth <= 500) {
           $(".game-container-middle").attr("horizontal", "true");
+          green.css('width', 100 - $(".game-container-middle-slider").slider("option", "value") + '%');
           $(".game-container-middle-slider").slider("option", "orientation", "horizontal");
         } else if(window.innerWidth > 500) {
           $(".game-container-middle").attr("horizontal", "false");
+          green.css('height', $(".game-container-middle-slider").slider("option", "value") + '%');
           $(".game-container-middle-slider").slider("option", "orientation", "vertical");
         }
       }
