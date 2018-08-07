@@ -179,6 +179,12 @@
       }
       &[horizontal=true] {
         flex-direction: row;
+        span:first-child {
+          order: 3;
+        }
+        span:last-child {
+          order: 1;
+        }
       }
       &-slider.ui-slider-vertical {
         background-color: #F10260;
@@ -194,6 +200,7 @@
         margin-top: 20px;
         border-radius: $border-radius;
         border: none !important;
+        order: 2;
       }
       &-slider-handle {
         margin-top: -15px;
