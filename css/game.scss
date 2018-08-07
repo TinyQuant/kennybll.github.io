@@ -179,6 +179,12 @@
       }
       &[horizontal=true] {
         flex-direction: row;
+        span:first-child {
+          order: 3;
+        }
+        span:last-child {
+          order: 1;
+        }
       }
       &-slider.ui-slider-vertical {
         background-color: #F10260;
@@ -194,6 +200,7 @@
         margin-top: 20px;
         border-radius: $border-radius;
         border: none !important;
+        order: 2;
       }
       &-slider-handle {
         margin-top: -15px;
@@ -216,9 +223,9 @@
           background-color: #02F292;
           height: 10px !important;
           z-index: 1;
-          width: 73%;
-          float: right;
+          width: 27%;
           border-radius: $border-radius;
+          float: left;
         }
       }
       &-slider.ui-slider-vertical {
@@ -226,7 +233,7 @@
           background-color: #02F292;
           width: 10px !important;
           z-index: 1;
-          height: 73%;
+          height: 27%;
           position: absolute;
           bottom: 0;
           border-radius: $border-radius;

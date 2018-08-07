@@ -301,6 +301,18 @@
           flex-direction: row;
 }
 
+.game-container-middle[horizontal=true] span:first-child {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.game-container-middle[horizontal=true] span:last-child {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
 .game-container-middle-slider.ui-slider-vertical {
   background-color: #F10260;
   width: 10px;
@@ -316,6 +328,9 @@
   margin-top: 20px;
   border-radius: 5px;
   border: none !important;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .game-container-middle-slider-handle {
@@ -346,16 +361,16 @@
   background-color: #02F292;
   height: 10px !important;
   z-index: 1;
-  width: 73%;
-  float: right;
+  width: 27%;
   border-radius: 5px;
+  float: left;
 }
 
 .game-container-middle-slider.ui-slider-vertical .game-container-middle-slider-range {
   background-color: #02F292;
   width: 10px !important;
   z-index: 1;
-  height: 73%;
+  height: 27%;
   position: absolute;
   bottom: 0;
   border-radius: 5px;

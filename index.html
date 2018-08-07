@@ -184,7 +184,7 @@
         min: 2,
         slide: function (event, ui) {
           if(window.innerWidth <= 500) {
-            green.css('width', 100 - ui.value + '%');
+            green.css('width', ui.value + '%');
           } else {
             green.css('height', ui.value + '%');
           }
@@ -193,16 +193,18 @@
       window.onload = function() {
         if(window.innerWidth <= 500) {
           $(".game-container-middle").attr("horizontal", "true");
+          green.css('width', $(".game-container-middle-slider").slider("option", "value") + '%');
           $(".game-container-middle-slider").slider("option", "orientation", "horizontal");
         } else if(window.innerWidth > 500) {
           $(".game-container-middle").attr("horizontal", "false");
+          green.css('height', $(".game-container-middle-slider").slider("option", "value") + '%');
           $(".game-container-middle-slider").slider("option", "orientation", "vertical");
         }
       }
       window.onresize = function() {
         if(window.innerWidth <= 500) {
           $(".game-container-middle").attr("horizontal", "true");
-          green.css('width', 100 - $(".game-container-middle-slider").slider("option", "value") + '%');
+          green.css('width', $(".game-container-middle-slider").slider("option", "value") + '%');
           $(".game-container-middle-slider").slider("option", "orientation", "horizontal");
         } else if(window.innerWidth > 500) {
           $(".game-container-middle").attr("horizontal", "false");
