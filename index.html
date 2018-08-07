@@ -43,6 +43,7 @@
   <div class="game">
     <div class="game-container">
       <div class="game-container-top">
+        <div class="game-container-top-space"></div>
         <div class="game-container-top-eos-balance">
           <span class="game-container-top-eos-balance-title">EOS Balance</span>
           <span class="game-container-top-eos-balance-amount">
@@ -92,11 +93,6 @@
         </div>
         <div class="game-container-middle">
           <div class="game-container-middle-slider">
-            <div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
             <div class="game-container-middle-slider-range"></div>
           </div>
         </div>
@@ -184,11 +180,28 @@
         value: 27,
         max: 99,
         min: 1,
-        step: 1,
         slide: function (event, ui) {
-          green.css('height', 100 - ui.value + '%');
+          if(window.innerWidth <= 500) {
+            green.css('width', 100 - ui.value + '%');
+          } else {
+            green.css('height', 100 - ui.value + '%');
+          }
         }
       });
+      window.onload = function() {
+        if(window.innerWidth <= 500) {
+          $(".game-container-middle-slider").slider("option", "orientation", "horizontal");
+        } else if(window.innerWidth > 500) {
+          $(".game-container-middle-slider").slider("option", "orientation", "vertical");
+        }
+      }
+      window.onresize = function() {
+        if(window.innerWidth <= 500) {
+          $(".game-container-middle-slider").slider("option", "orientation", "horizontal");
+        } else if(window.innerWidth > 500) {
+          $(".game-container-middle-slider").slider("option", "orientation", "vertical");
+        }
+      }
     });
   </script>
 

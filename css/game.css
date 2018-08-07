@@ -41,6 +41,12 @@
           align-items: center;
 }
 
+.game-container-top-space {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .game-container-top-eos-balance {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,7 +92,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 70%;
+  font-size: 60%;
 }
 
 .game-container-top-bet-balance-title {
@@ -95,7 +101,7 @@
 }
 
 .game-container-top-bet-balance-amount {
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
   color: #9ea0a7;
 }
@@ -111,9 +117,9 @@
 }
 
 .game-container-bottom-left {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,6 +159,8 @@
   font-size: 12px;
   padding: 5px;
   color: #bdbfc5;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .game-container-bottom-left-betamount-buttons-button:hover {
@@ -272,10 +280,28 @@
           justify-content: center;
 }
 
-.game-container-middle-slider {
+.game-container-middle-slider.ui-slider-vertical {
   background-color: #F10260;
   width: 10px;
   height: 90%;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none !important;
+}
+
+.game-container-middle-slider.ui-slider-vertical {
+  background-color: #F10260;
+  width: 10px;
+  height: 90%;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none !important;
+}
+
+.game-container-middle-slider.ui-slider-horizontal {
+  background-color: #F10260;
+  width: 90%;
+  height: 10px;
   margin-top: 20px;
   border-radius: 5px;
   border: none !important;
@@ -301,9 +327,22 @@
           align-items: center;
 }
 
-.game-container-middle-slider-range {
+.game-container-middle-slider.ui-slider-horizontal {
+  margin: 20px 0px;
+}
+
+.game-container-middle-slider.ui-slider-horizontal .game-container-middle-slider-range {
   background-color: #02F292;
-  width: 10px;
+  height: 10px !important;
+  z-index: 1;
+  width: 73%;
+  float: right;
+  border-radius: 5px;
+}
+
+.game-container-middle-slider.ui-slider-vertical .game-container-middle-slider-range {
+  background-color: #02F292;
+  width: 10px !important;
   z-index: 1;
   height: 73%;
   border-radius: 5px;
@@ -329,9 +368,9 @@
 }
 
 .game-container-right-top {
-  font-size: 35px;
+  font-size: 50px;
   border-bottom: 1px solid #cccccc;
-  width: 50%;
+  width: 80%;
   text-align: center;
 }
 
@@ -340,11 +379,12 @@
 }
 
 .game-container-right-bottom button {
-  height: 70px;
-  width: 75px;
+  height: 100px;
+  width: 105px;
   background-color: #2b56f5;
   border: none;
   color: #ffffff;
   border-radius: 5px;
+  font-size: 25px;
 }
 /*# sourceMappingURL=game.css.map */

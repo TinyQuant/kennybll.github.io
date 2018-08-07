@@ -21,6 +21,9 @@
       border-bottom: 1px solid #dee1e9;
       padding-bottom: 10px;
       align-items: center;
+      &-space {
+        flex: 1;
+      }
       &-eos {
         &-balance {
           display: flex;
@@ -47,13 +50,13 @@
           flex: 1;
           flex-direction: column;
           align-items: center;
-          font-size: 70%;
+          font-size: 60%;
           &-title {
             text-transform: uppercase;
             text-align: center;
           }
           &-amount {
-            font-size: 22px;
+            font-size: 18px;
             text-align: center;
             color: #9ea0a7;
             span {
@@ -66,7 +69,7 @@
     &-bottom {
       display: flex;
       &-left {
-        flex: 1;
+        flex: 2;
         display: flex;
         flex-direction: column;
         &-span {
@@ -90,6 +93,7 @@
               font-size: 12px;
               padding: 5px;
               color: #bdbfc5;
+              transition: all 0.2s ease-in-out;
               &:hover {
                 color: #000000;
               }
@@ -166,31 +170,60 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      &-slider {
+      &-slider.ui-slider-vertical {
         background-color: #F10260;
         width: 10px;
         height: 90%;
         margin-top: 20px;
         border-radius: $border-radius;
         border: none !important;
-        &-handle {
-          margin-top: -15px;
-          display: flex;
-          border-radius: $border-radius;
-          height: 30px;
-          width: 30px;
-          margin-left: -15px;
-          background-color: #ffffff;
-          border: 1px solid #cccccc;
-          position: relative;
-          text-align: center;
-          top: 50%;
-          z-index: 3;
-          align-items: center;
-        }
-        &-range {
+      }
+      &-slider.ui-slider-vertical {
+        background-color: #F10260;
+        width: 10px;
+        height: 90%;
+        margin-top: 20px;
+        border-radius: $border-radius;
+        border: none !important;
+      }
+      &-slider.ui-slider-horizontal {
+        background-color: #F10260;
+        width: 90%;
+        height: 10px;
+        margin-top: 20px;
+        border-radius: $border-radius;
+        border: none !important;
+      }
+      &-slider-handle {
+        margin-top: -15px;
+        display: flex;
+        border-radius: $border-radius;
+        height: 30px;
+        width: 30px;
+        margin-left: -15px;
+        background-color: #ffffff;
+        border: 1px solid #cccccc;
+        position: relative;
+        text-align: center;
+        top: 50%;
+        z-index: 3;
+        align-items: center;
+      }
+      &-slider.ui-slider-horizontal {
+        margin: 20px 0px;
+        .game-container-middle-slider-range {
           background-color: #02F292;
-          width: 10px;
+          height: 10px !important;
+          z-index: 1;
+          width: 73%;
+          float: right;
+          border-radius: $border-radius;
+        }
+      }
+      &-slider.ui-slider-vertical {
+        .game-container-middle-slider-range {
+          background-color: #02F292;
+          width: 10px !important;
           z-index: 1;
           height: 73%;
           border-radius: $border-radius;
@@ -204,20 +237,21 @@
       justify-content: center;
       align-items: center;
       &-top {
-        font-size: 35px;
+        font-size: 50px;
         border-bottom: 1px solid #cccccc;
-        width: 50%;
+        width: 80%;
         text-align: center;
       }
       &-bottom {
         margin-top: 40px;
         button {
-          height: 70px;
-          width: 75px;
+          height: 100px;
+          width: 105px;
           background-color: #2b56f5;
           border: none;
           color: #ffffff;
           border-radius: $border-radius;
+          font-size: 25px;
         }
       }
     }
