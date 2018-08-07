@@ -26,6 +26,21 @@
   .scores-table-top span:nth-child(4), .scores-table-bottom li span:nth-child(4) {
     display: none !important;
   }
+  .game-container-middle {
+    flex-direction: row;
+    span:first-child {
+      order: 3;
+    }
+    span:last-child {
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .game-container-middle {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 588px) {
