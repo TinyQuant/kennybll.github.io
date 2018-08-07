@@ -49,6 +49,21 @@
   }
 }
 
+@media (max-width: 600px) {
+  .game-container-top {
+    flex-direction: column;
+    &-amount {
+      margin-right: 0px;
+    }
+    &-profit {
+      margin-top: 20px;
+    }
+  }
+  .navbar-coin {
+    display: block;
+  }
+}
+
 @media (max-width: 635px) {
   .game-container-bottom-left-bottom {
     flex-direction: column;
@@ -58,6 +73,12 @@
     &-right-span {
       margin-top: 20px;
     }
+  }
+}
+
+@media (max-width: 655px) {
+  .navbar-coin {
+    display: none;
   }
 }
 

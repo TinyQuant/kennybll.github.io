@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="./css/index.css" />
   <link rel="stylesheet" href="./css/nav.css" />
   <link rel="stylesheet" href="./css/game.css" />
@@ -43,69 +43,64 @@
   <div class="game">
     <div class="game-container">
       <div class="game-container-top">
-        <div class="game-container-top-space"></div>
-        <div class="game-container-top-eos-balance">
-          <span class="game-container-top-eos-balance-title">EOS Balance</span>
-          <span class="game-container-top-eos-balance-amount">
-            <span>17</span>.0000</span>
+        <div class="game-container-top-amount">
+          <span>Bet Amount</span>
+          <div class="game-container-top-amount-input-wrapper">
+            <img src="./bitcoin.svg" class="navbar-coin" />
+
+            <input class="game-container-top-amount-input" type="text" value="0.00000010" />
+            <button class="game-container-top-amount-input-btn">
+              <span>1/2</span>
+            </button>
+            <button class="game-container-top-amount-input-btn with-side">
+              <span>2X</span>
+            </button>
+            <button class="game-container-top-amount-input-btn with-side">
+              <span>MAX</span>
+            </button>
+          </div>
         </div>
-        <div class="game-container-top-bet-balance">
-          <span class="game-container-top-bet-balance-title">BET Balance</span>
-          <span class="game-container-top-bet-balance-amount">
-            <span>17</span>.0000</span>
+        <div class="game-container-top-profit">
+          <span>Profit On Win</span>
+            <div class="game-container-top-profit-wrapper">
+                <img src="./bitcoin.svg" class="navbar-coin" />
+              <div class="game-container-top-profit-amount">0.00000010</div>
+            </div>
+        </div>
+      </div>
+      <div class="game-container-middle">
+        <div class="game-container-middle-bg">
+          <div class="game-container-middle-wrapper">
+            <div class="game-container-middle-roll">
+              <span class="game-container-middle-roll-title">Roll Under To Win</span>
+              <div class="game-container-middle-roll-value-wrapper">
+                <span class="game-container-middle-roll-value">49.99</span>
+              </div>
+            </div>
+            <hr class="game-container-middle-hr" />
+            <div class="game-container-middle-payout">
+              <span class="game-container-middle-payout-title">Payout</span>
+              <span class="game-container-middle-payout-input">1.98</span>
+            </div>
+            <hr class="game-container-middle-hr" />
+            <div class="game-container-middle-chance">
+              <span class="game-container-middle-chance-title">Win Chance</span>
+              <span class="game-container-middle-chance-input">50.00</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="game-container-bottom">
-        <div class="game-container-bottom-left">
-          <span class="game-container-bottom-left-span">Bet Amount</span>
-          <div class="game-container-bottom-left-betamount">
-            <div class="game-container-bottom-left-betamount-buttons">
-              <button class="game-container-bottom-left-betamount-buttons-button">
-                1/2
-              </button>
-              <button class="game-container-bottom-left-betamount-buttons-button">
-                2X
-              </button>
-              <button class="game-container-bottom-left-betamount-buttons-button">
-                MAX
-              </button>
-            </div>
-            <div class="game-container-bottom-left-betamount-amount">
-              <img src="./bitcoin.svg" class="game-container-bottom-left-betamount-amount-coin" />
-              <span class="game-container-bottom-left-betamount-amount-span">1.0719</span>
-            </div>
-          </div>
-          <span class="game-container-bottom-left-span">Profit on Win</span>
-          <div class="game-container-bottom-left-profit">
-            <img src="./bitcoin.svg" class="game-container-bottom-left-profit-coin" />
-            <span class="game-container-bottom-left-profit-span">2.0150</span>
-          </div>
-          <div class="game-container-bottom-left-bottom">
-            <div class="game-container-bottom-left-bottom-left">
-              <span class="game-container-bottom-left-bottom-left-span">Win Chance</span>
-              <span class="game-container-bottom-left-bottom-left-content">72%</span>
-            </div>
-            <div class="game-container-bottom-left-bottom-right">
-              <span class="game-container-bottom-left-bottom-right-span">Payout</span>
-              <span class="game-container-bottom-left-bottom-right-content">1.21x</span>
-            </div>
-          </div>
+        <div class="game-container-bottom-balance-eos"><img src="./bitcoin.svg" /><span>17</span><span>.0000</span></div>
+        <button class="game-container-roll-btn">Roll Dice</button>
+        <div class="game-container-bottom-balance-bet"><img src="./bitcoin.svg" /><span>17</span><span>.0000</span></div>
+      </div>
+      <div class="game-container-slider">
+        <span>0</span>
+        <div id="slider">
+          <div class="ui-slider-range"></div>
         </div>
-        <div class="game-container-middle">
-          <span>100</span>
-          <div class="game-container-middle-slider">
-            <div class="game-container-middle-slider-range"></div>
-          </div>
-          <span>0</span>
-        </div>
-        <div class="game-container-right">
-          <div class="game-container-right-top">
-            <73 </div>
-              <div class="game-container-right-bottom">
-                <button>Roll</button>
-              </div>
-          </div>
-        </div>
+        <span>100</span>
       </div>
     </div>
   </div>
@@ -168,52 +163,27 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-    $(function () {
-      var green = $(".game-container-middle-slider-range");
-      $(".game-container-middle-slider").slider({
-        orientation: "vertical",
-        value: 27,
-        max: 96,
-        min: 2,
-        slide: function (event, ui) {
-          if(window.innerWidth <= 500) {
-            green.css('width', ui.value + '%');
-          } else {
-            green.css('height', ui.value + '%');
-          }
-        }
-      });
-      window.onload = function() {
-        if(window.innerWidth <= 500) {
-          $(".game-container-middle").attr("horizontal", "true");
-          green.css('width', $(".game-container-middle-slider").slider("option", "value") + '%');
-          $(".game-container-middle-slider").slider("option", "orientation", "horizontal");
-        } else if(window.innerWidth > 500) {
-          $(".game-container-middle").attr("horizontal", "false");
-          green.css('height', $(".game-container-middle-slider").slider("option", "value") + '%');
-          $(".game-container-middle-slider").slider("option", "orientation", "vertical");
-        }
-      }
-      window.onresize = function() {
-        if(window.innerWidth <= 500) {
-          $(".game-container-middle").attr("horizontal", "true");
-          green.css('width', $(".game-container-middle-slider").slider("option", "value") + '%');
-          $(".game-container-middle-slider").slider("option", "orientation", "horizontal");
-        } else if(window.innerWidth > 500) {
-          $(".game-container-middle").attr("horizontal", "false");
-          green.css('height', $(".game-container-middle-slider").slider("option", "value") + '%');
-          $(".game-container-middle-slider").slider("option", "orientation", "vertical");
-        }
+  <script>$( function() {
+    var handle = $( "#custom-handle" );
+    var green = $( ".ui-slider-range" );
+    $( "#slider" ).slider({
+      value: 50,
+      max: 99,
+      min: 1,
+      step: 0.001,
+      slide: function( event, ui ) {
+        green.css('width', ui.value + '%');
       }
     });
-  </script>
+  } );
+</script>
 
 </body>
 
