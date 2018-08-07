@@ -170,19 +170,20 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      &-slider.ui-slider-vertical {
-        background-color: #F10260;
-        width: 10px;
-        height: 90%;
-        margin-top: 20px;
-        border-radius: $border-radius;
-        border: none !important;
+      span {
+        flex: 1;
+        padding: 10px;
+      }
+      &[horizontal=false] {
+        flex-direction: column;
+      }
+      &[horizontal=true] {
+        flex-direction: row;
       }
       &-slider.ui-slider-vertical {
         background-color: #F10260;
         width: 10px;
         height: 90%;
-        margin-top: 20px;
         border-radius: $border-radius;
         border: none !important;
       }

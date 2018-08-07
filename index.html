@@ -92,9 +92,11 @@
           </div>
         </div>
         <div class="game-container-middle">
+          <span>1</span>
           <div class="game-container-middle-slider">
             <div class="game-container-middle-slider-range"></div>
           </div>
+          <span>99</span>
         </div>
         <div class="game-container-right">
           <div class="game-container-right-top">
@@ -190,15 +192,19 @@
       });
       window.onload = function() {
         if(window.innerWidth <= 500) {
+          $(".game-container-middle").attr("horizontal", "true");
           $(".game-container-middle-slider").slider("option", "orientation", "horizontal");
         } else if(window.innerWidth > 500) {
+          $(".game-container-middle").attr("horizontal", "false");
           $(".game-container-middle-slider").slider("option", "orientation", "vertical");
         }
       }
       window.onresize = function() {
         if(window.innerWidth <= 500) {
+          $(".game-container-middle").attr("horizontal", "true");
           $(".game-container-middle-slider").slider("option", "orientation", "horizontal");
         } else if(window.innerWidth > 500) {
+          $(".game-container-middle").attr("horizontal", "false");
           $(".game-container-middle-slider").slider("option", "orientation", "vertical");
         }
       }
