@@ -61,3 +61,26 @@
     }
   }
 }
+
+.referral {
+  &-body {
+    display: flex;
+  }
+  &-btn {
+    background-color: #2b56f5;
+    color: #ffffff;
+  }
+  &-name:disabled {
+    background-color: #ecedf0;
+    color: #F10260;
+    padding: 12px;
+    border-radius: 5px;
+    border: 0;
+    width: 100%;
+    flex: 1;
+    margin-right: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

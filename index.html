@@ -34,7 +34,7 @@
         <button type="button" class="btn btn-link navbar-link navbar-community" data-toggle="modal" data-target="#communityModal">Community</button>
       </div>
       <div class="d-flex justify-content-between flex-row">
-        <button type="button" class="btn btn-link navbar-link navbar-refferals">Refferals</button>
+        <button type="button" class="btn btn-link navbar-link navbar-refferals" data-toggle="modal" data-target="#referralModal">Referrals</button>
         <button type="button" class="btn btn-link navbar-link navbar-faq">How To Play</button>
       </div>
     </div>
@@ -203,22 +203,39 @@
   </div>
 
   <div class="modal fade" id="fairnessModal" tabindex="-1" role="dialog" aria-labelledby="fairnessModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="fairnessModalLabel">Fairness</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body fairness-body">
+          <span class="fairness-seed-title">Custom Seed</span>
+          <div class="fairness-input-wrapper">
+            <input class="fairness-input" type="text" />
+            <button class="btn btn-primary fairness-input-submit">Update</button>
+          </div>
+          <span class="fairness-seed-title2">Current Seed</span>
+          <span class="fairness-seed"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="referralModal" tabindex="-1" role="dialog" aria-labelledby="referralModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="fairnessModalLabel">Fairness</h5>
+            <h5 class="modal-title" id="referralModalLabel">Referrals</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body fairness-body">
-            <span class="fairness-seed-title">Custom Seed</span>
-            <div class="fairness-input-wrapper">
-              <input class="fairness-input" type="text" />
-              <button class="btn btn-primary fairness-input-submit">Update</button>
-            </div>
-            <span class="fairness-seed-title2">Current Seed</span>
-            <span class="fairness-seed"></span>
+          <div class="modal-body referral-body">
+            <input class="referral-name" value="https://eosbet.io/dice/i/kennybennett" disabled></input>
+            <button class="btn referral-btn">Copy</button>
           </div>
         </div>
       </div>
@@ -245,12 +262,12 @@
       });
       function generate_seed() {
         let string = "";
-        for(let i = 0; i < 40; i++) {
+        for (let i = 0; i < 40; i++) {
           string = string + chars.charAt(Math.random() * 40 + 1);
         }
         return string;
       }
-      window.onload = function() {
+      window.onload = function () {
         $('.fairness-seed').html(generate_seed());
       }
     });

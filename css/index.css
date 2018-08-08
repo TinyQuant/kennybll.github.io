@@ -78,4 +78,32 @@
   font-weight: 500;
   margin-top: 5px;
 }
+
+.referral-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.referral-btn {
+  background-color: #2b56f5;
+  color: #ffffff;
+}
+
+.referral-name:disabled {
+  background-color: #ecedf0;
+  color: #F10260;
+  padding: 12px;
+  border-radius: 5px;
+  border: 0;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 10px;
+}
+
+.referral-name:disabled:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=index.css.map */
