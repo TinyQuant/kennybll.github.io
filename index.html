@@ -234,8 +234,8 @@
             </button>
           </div>
           <div class="modal-body referral-body">
-            <input class="referral-name" id="referral-name" value="https://eosbet.io/dice/i/kennybennett" disabled></input>
-            <button class="btn referral-btn" onclick="copy()">Copy</button>
+            <input class="referral-name" id="referral-name" value="https://eosbet.io/dice/i/kennybennett"></input>
+            <button class="referral-btn btn" id="referral-btn">Copy</button>
           </div>
         </div>
       </div>
@@ -272,10 +272,10 @@
       }
     });
     function copy() {
-      var copyText = document.getElementById("referral-name");
-      copyText.select();
+      document.getElementById('referral-name').select()
       document.execCommand("copy");
     }
+    $('.referral-btn').on('click', copy);
   </script>
 
 </body>

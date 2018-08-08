@@ -90,7 +90,7 @@
   color: #ffffff;
 }
 
-.referral-name:disabled {
+.referral-name {
   background-color: #ecedf0;
   color: #F10260;
   padding: 12px;
@@ -103,7 +103,7 @@
   margin-right: 10px;
 }
 
-.referral-name:disabled:hover {
+.referral-name:hover {
   cursor: pointer;
 }
 
