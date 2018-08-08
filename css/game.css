@@ -1,5 +1,5 @@
 .game {
-  background-color: #2b56f5;
+  background: radial-gradient(#0a1992 30%, #000000 100%);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,11 +345,19 @@
 }
 
 .game .game-container-roll-btn {
-  background-color: #8fd2fe;
+  background-color: #ff9d00;
+  /*background-image: linear-gradient(to left, #2b56f5 50% ,#46bdf4 100%);*/
+  /*border-radius: 32px !important;*/
+  letter-spacing: 3px;
+  text-transform: uppercase;
   color: #ffffff;
   border: none;
   padding: 15px 50px;
   border-radius: 5px;
+}
+
+.game-container-roll-btn:hover {
+  background-position: right center;
 }
 
 .game #slider {
