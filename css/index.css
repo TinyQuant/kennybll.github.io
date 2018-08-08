@@ -106,4 +106,8 @@
 .referral-name:disabled:hover {
   cursor: pointer;
 }
+
+.navbar-link:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=index.css.map */
