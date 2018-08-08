@@ -9,3 +9,55 @@
 .flex-fill-1 {
   flex: 1 !important;
 }
+
+.community {
+  &-body {
+    display: flex;
+    justify-content: space-around;
+  }
+  &-icon {
+    background-color: #2b56f5;
+    color: #ffffff;
+    padding: 12.5px;
+    flex: 1;
+    border-radius: 50%;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.fairness {
+  &-body {
+    display: flex;
+    flex-direction: column;
+  }
+  &-input {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: 500;
+    flex: 1;
+    margin-right: 10px;
+    &-submit {
+      background-color: #2b56f5;
+    }
+    &-wrapper {
+      display: flex;
+      width: 100%;
+    }
+  }
+  &-seed {
+    background-color: #ecedf0;
+    color: #F10260;
+    padding: 5px;
+    border-radius: 5px;
+    &-title {
+      font-weight: 500;
+    }
+    &-title2 {
+      font-weight: 500;
+      margin-top: 5px;
+    }
+  }
+}

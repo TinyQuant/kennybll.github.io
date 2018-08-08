@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/index.css" />
   <link rel="stylesheet" href="./css/nav.css" />
   <link rel="stylesheet" href="./css/game.css" />
@@ -29,8 +30,8 @@
           </svg> -->
           <span class="navbar-brand-span">EOSBet Dice</span>
         </a>
-        <button type="button" class="btn btn-link navbar-link navbar-fairness">Fairness</button>
-        <button type="button" class="btn btn-link navbar-link navbar-community">Community</button>
+        <button type="button" class="btn btn-link navbar-link navbar-fairness" data-toggle="modal" data-target="#fairnessModal">Fairness</button>
+        <button type="button" class="btn btn-link navbar-link navbar-community" data-toggle="modal" data-target="#communityModal">Community</button>
       </div>
       <div class="d-flex justify-content-between flex-row">
         <button type="button" class="btn btn-link navbar-link navbar-refferals">Refferals</button>
@@ -62,10 +63,10 @@
         </div>
         <div class="game-container-top-profit">
           <span>Profit On Win</span>
-            <div class="game-container-top-profit-wrapper">
-                <img src="./bitcoin.svg" class="navbar-coin" />
-              <div class="game-container-top-profit-amount">0.00000010</div>
-            </div>
+          <div class="game-container-top-profit-wrapper">
+            <img src="./bitcoin.svg" class="navbar-coin" />
+            <div class="game-container-top-profit-amount">0.00000010</div>
+          </div>
         </div>
       </div>
       <div class="game-container-middle">
@@ -91,9 +92,17 @@
         </div>
       </div>
       <div class="game-container-bottom">
-        <div class="game-container-bottom-balance-eos"><img src="./bitcoin.svg" /><span>17</span><span>.0000</span></div>
+        <div class="game-container-bottom-balance-eos">
+          <img src="./bitcoin.svg" />
+          <span>17</span>
+          <span>.0000</span>
+        </div>
         <button class="game-container-roll-btn">Roll Dice</button>
-        <div class="game-container-bottom-balance-bet"><img src="./bitcoin.svg" /><span>17</span><span>.0000</span></div>
+        <div class="game-container-bottom-balance-bet">
+          <img src="./bitcoin.svg" />
+          <span>17</span>
+          <span>.0000</span>
+        </div>
       </div>
       <div class="game-container-slider">
         <span>0</span>
@@ -163,27 +172,89 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    crossorigin="anonymous"></script>
+  <div class="modal fade" id="communityModal" tabindex="-1" role="dialog" aria-labelledby="communityModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="communityModalLabel">Community</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body community-body">
+          <a target="_blank" href="https://t.me/eosbetcasino">
+            <em class="fa fa-telegram community-icon"></em>
+          </a>
+          <a target="_blank" href="https://twitter.com/EOSBetCasino">
+            <em class="fa fa-twitter community-icon"></em>
+          </a>
+          <a target="_blank" href="https://www.reddit.com/r/EOSBetCasino/">
+            <em class="fa fa-reddit-alien community-icon"></em>
+          </a>
+          <a target="_blank" href="https://medium.com/@eosbetcasino">
+            <em class="fa fa-medium community-icon"></em>
+          </a>
+          <a target="_blank" href="#">
+            <em class="fa fa-wechat community-icon"></em>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="fairnessModal" tabindex="-1" role="dialog" aria-labelledby="fairnessModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="fairnessModalLabel">Fairness</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body fairness-body">
+            <span class="fairness-seed-title">Custom Seed</span>
+            <div class="fairness-input-wrapper">
+              <input class="fairness-input" type="text" />
+              <button class="btn btn-primary fairness-input-submit">Update</button>
+            </div>
+            <span class="fairness-seed-title2">Current Seed</span>
+            <span class="fairness-seed"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>$( function() {
-    var handle = $( "#custom-handle" );
-    var green = $( ".ui-slider-range" );
-    $( "#slider" ).slider({
-      value: 50,
-      max: 99,
-      min: 1,
-      step: 0.001,
-      slide: function( event, ui ) {
-        green.css('width', ui.value + '%');
+  <script>$(function () {
+      var handle = $("#custom-handle");
+      var green = $(".ui-slider-range");
+      let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+      $("#slider").slider({
+        value: 50,
+        max: 99,
+        min: 1,
+        step: 0.001,
+        slide: function (event, ui) {
+          green.css('width', ui.value + '%');
+        }
+      });
+      function generate_seed() {
+        let string = "";
+        for(let i = 0; i < 40; i++) {
+          string = string + chars.charAt(Math.random() * 40 + 1);
+        }
+        return string;
+      }
+      window.onload = function() {
+        $('.fairness-seed').html(generate_seed());
       }
     });
-  } );
-</script>
+  </script>
 
 </body>
 
