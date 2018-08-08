@@ -234,8 +234,8 @@
             </button>
           </div>
           <div class="modal-body referral-body">
-            <input class="referral-name" value="https://eosbet.io/dice/i/kennybennett" disabled></input>
-            <button class="btn referral-btn">Copy</button>
+            <input class="referral-name" id="referral-name" value="https://eosbet.io/dice/i/kennybennett" disabled></input>
+            <button class="btn referral-btn" onclick="copy()">Copy</button>
           </div>
         </div>
       </div>
@@ -271,6 +271,11 @@
         $('.fairness-seed').html(generate_seed());
       }
     });
+    function copy() {
+      var copyText = document.getElementById("referral-name");
+      copyText.select();
+      document.execCommand("copy");
+    }
   </script>
 
 </body>
