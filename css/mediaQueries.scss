@@ -2,9 +2,6 @@
   .game-container-top-bet-balance, .game-container-top-space {
     display: none !important;
   }
-  .game-container-bottom {
-    flex-direction: column;
-  }
   .scores-table-top span:nth-child(4), .scores-table-bottom li span:nth-child(4) {
     display: none !important;
   }
@@ -23,18 +20,6 @@
     }
     span:last-child {
       order: 1;
-    }
-  }
-  .game-container {
-    &-bottom-balance-eos {
-      order: 1;
-    }
-    &-bottom-balance-bet {
-      order: 2;
-      padding: 10px 0px;
-    }
-    &-roll-btn {
-      order: 3;
     }
   }
 }
@@ -75,6 +60,44 @@
     &-right-span {
       margin-top: 20px;
     }
+  }
+  .game-container {
+    &-bottom-balance-eos {
+      position: absolute; 
+      overflow: hidden; 
+      clip: rect(0 0 0 0); 
+      height: 1px; width: 1px; 
+      margin: -1px; padding: 0; border: 0;
+    }
+    &-bottom-balance-bet {
+      position: absolute; 
+      overflow: hidden; 
+      clip: rect(0 0 0 0); 
+      height: 1px; width: 1px; 
+      margin: -1px; padding: 0; border: 0;
+    }
+    &-bottom-balances {
+      display: flex !important;
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    &-roll-btn {
+      order: 3;
+    }
+  }
+  .game-container-bottom {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 635px) {
+  .game-container-bottom-balances {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0;
   }
 }
 
