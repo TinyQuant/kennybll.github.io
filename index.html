@@ -37,8 +37,16 @@
         <button type="button" class="btn btn-link navbar-link navbar-refferals" data-toggle="modal" data-target="#referralModal">Referrals</button>
         <button type="button" class="btn btn-link navbar-link navbar-faq" data-toggle="modal" data-target="#htpModal">How To Play</button>
       </div>
+      <button class="btn btn-link navbar-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="dropdown-menu dropdown-menu-right">
+          <button class="dropdown-item" type="button" data-toggle="modal" data-target="#fairnessModal">Fairness</button>
+          <button class="dropdown-item" type="button" data-toggle="modal" data-target="#communityModal">Community</button>
+          <button class="dropdown-item" type="button" data-toggle="modal" data-target="#referralModal">Referrals</button>
+          <button class="dropdown-item" type="button" data-toggle="modal" data-target="#htpModal">How To Play</button>
+        </div>
     </div>
-
   </nav>
 
   <div class="game">
@@ -74,6 +82,7 @@
           <div class="game-container-middle-wrapper">
             <div class="game-container-middle-roll">
               <span class="game-container-middle-roll-title">Roll Under To Win</span>
+              <span class="game-container-middle-roll-title2">Roll Under</span>
               <div class="game-container-middle-roll-value-wrapper">
                 <span class="game-container-middle-roll-value">50&darr;</span>
               </div>
@@ -91,18 +100,19 @@
           </div>
         </div>
       </div>
+
       <div class="game-container-bottom">
         <div class="game-container-bottom-balance-eos">
           <img src="./eos-logo.gif" />
           <span>17</span>
           <span>.1109</span>
         </div>
-        <button class="game-container-roll-btn">Roll Dice</button>
         <div class="game-container-bottom-balance-bet">
           <img src="./eos-logo.gif" />
           <span>134</span>
           <span>.6800</span>
         </div>
+        <button class="game-container-roll-btn">Roll Dice</button>
       </div>
       <div class="game-container-slider">
         <span>0</span>
@@ -225,36 +235,36 @@
   </div>
 
   <div class="modal fade" id="referralModal" tabindex="-1" role="dialog" aria-labelledby="referralModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="referralModalLabel">Referrals</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body referral-body">
-            <input class="referral-name" id="referral-name" value="https://eosbet.io/dice/i/kennybennett"></input>
-            <button class="referral-btn btn" id="referral-btn">Copy</button>
-          </div>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="referralModalLabel">Referrals</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body referral-body">
+          <input class="referral-name" id="referral-name" value="https://eosbet.io/dice/i/kennybennett"></input>
+          <button class="referral-btn btn" id="referral-btn">Copy</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="modal fade" id="htpModal" tabindex="-1" role="dialog" aria-labelledby="htpModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="htpModalLabel">How To Play</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body htp-body">
-            </div>
-          </div>
+  <div class="modal fade" id="htpModal" tabindex="-1" role="dialog" aria-labelledby="htpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="htpModalLabel">How To Play</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body htp-body">
         </div>
       </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

@@ -1,15 +1,3 @@
-@media (max-width: 305px) {
-  .navbar-fairness {
-    display: none !important;
-  }
-}
-
-@media (max-width: 415px) {
-  .navbar-community {
-    display: none !important;
-  }
-}
-
 @media (max-width: 500px) {
   .game-container-top-bet-balance, .game-container-top-space {
     display: none !important;
@@ -22,11 +10,31 @@
   }
   .game-container-middle {
     flex-direction: row;
+    &-roll {
+      &-title {
+        display: none;
+      }
+      &-title2 {
+        display: block;
+      }
+    }
     span:first-child {
       order: 3;
     }
     span:last-child {
       order: 1;
+    }
+  }
+  .game-container {
+    &-bottom-balance-eos {
+      order: 1;
+    }
+    &-bottom-balance-bet {
+      order: 2;
+      padding: 10px 0px;
+    }
+    &-roll-btn {
+      order: 3;
     }
   }
 }
@@ -35,11 +43,11 @@
   .game-container-middle {
     flex-direction: column;
   }
-}
-
-@media (max-width: 535px) {
-  .navbar-faq {
-    display: none !important;
+  .game-container-middle-roll-title {
+    display: block;
+  }
+  .game-container-middle-roll-title2 {
+    display: none;
   }
 }
 
@@ -70,11 +78,26 @@
   }
 }
 
+@media (min-width: 655px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
 @media (max-width: 655px) {
   .navbar-coin {
     display: none;
   }
   .navbar-refferals {
+    display: none !important;
+  }
+  .navbar-faq {
+    display: none !important;
+  }
+  .navbar-community {
+    display: none !important;
+  }
+  .navbar-fairness {
     display: none !important;
   }
 }

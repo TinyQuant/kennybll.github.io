@@ -170,12 +170,25 @@
   }
 }
 
-.game .game-container-middle-roll-title, .game .game-container-middle-payout-title, .game .game-container-middle-chance-title {
+.game-container {
+  &-bottom-balance-eos {
+    order: 1;
+  }
+  &-bottom-balance-bet {
+    order: 3;
+  }
+  &-roll-btn {
+    order: 2;
+  }
+}
+
+.game .game-container-middle-roll-title, .game .game-container-middle-roll-title2, .game .game-container-middle-payout-title, .game .game-container-middle-chance-title {
   font-weight: 600;
   font-size: 0.6em;
   margin-bottom: 0.75em;
   text-transform: uppercase;
   color: #9b9fae;
+  order: 1;
 }
 
 .game .game-container-middle-roll-value-wrapper {
@@ -234,7 +247,7 @@
   border-bottom-left-radius: 0.3em;
   border-bottom-right-radius: 0.3em;
   text-align: center;
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
 }
 
 .game .game-container-roll-btn {
