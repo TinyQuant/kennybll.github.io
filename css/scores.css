@@ -19,7 +19,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -34,7 +33,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 10px;
+  padding: 7px 35px;
   background-color: #ffffff;
 }
 

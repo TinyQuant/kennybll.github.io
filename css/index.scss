@@ -88,3 +88,32 @@
 .navbar-link:hover {
   cursor: pointer;
 }
+
+.modal-backdrop.show {
+  opacity: .75;
+}
+
+.ui-slider-tooltip {
+  font-size: 14px;
+  position: absolute;
+  top: -34px;
+  left: -7px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2e3782;
+  padding: 1px 10px;
+}
+
+.ui-slider-tooltip::after {
+  top: 100%;
+  border-top: 7px solid #2e3782;
+  position: absolute;
+  content: '';
+  left: 10px;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+
+.my-handle {
+  outline: none;
+}

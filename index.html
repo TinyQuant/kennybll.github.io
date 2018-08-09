@@ -130,6 +130,9 @@
         <span>0</span>
         <div id="slider">
           <div class="ui-slider-range"></div>
+          <div class="my-handle ui-slider-handle">
+              <div class="ui-slider-tooltip">50</div>
+          </div>
         </div>
         <span>100</span>
       </div>
@@ -285,16 +288,17 @@
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>$(function () {
-      var handle = $("#custom-handle");
+      var handle = $(".ui-slider-tooltip");
       var green = $(".ui-slider-range");
       let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
       $("#slider").slider({
         value: 50,
-        max: 99,
-        min: 1,
+        max: 96,
+        min: 2,
         step: 1,
         slide: function (event, ui) {
-          green.css('width', ui.value + '%');
+          handle.text(ui.value);
+          green.css('width', ui.value * 100 / 94 + '%');
         }
       });
       function generate_seed() {
