@@ -176,11 +176,17 @@
 }
 
 .game-container {
-  &-bottom-balance-eos {
+  &-bottom-balance-eos, &-bottom-balances-eos {
     order: 1;
+    flex-direction: column;
   }
-  &-bottom-balance-bet {
+  &-bottom-balance-bet, &-bottom-balances-bet {
     order: 3;
+    flex-direction: column;
+  }
+  &-bottom-balance-title, &-bottom-balances-title {
+    font-size: 15px;
+    color: #000000 !important;
   }
   &-roll-btn {
     order: 2;
