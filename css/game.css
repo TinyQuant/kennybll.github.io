@@ -1,5 +1,5 @@
 .game {
-  background-color: #2b56f5;
+  background: radial-gradient(#0a1992 30%, #000000 100%);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
