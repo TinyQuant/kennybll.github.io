@@ -78,12 +78,6 @@
   }
 }
 
-@media (min-width: 655px) {
-  .navbar-toggler {
-    display: none;
-  }
-}
-
 @media (max-width: 655px) {
   .navbar-coin {
     display: none;
@@ -98,6 +92,12 @@
     display: none !important;
   }
   .navbar-fairness {
+    display: none !important;
+  }
+}
+
+@media (min-width: 655px) {
+  .dropdown-toggler {
     display: none !important;
   }
 }
