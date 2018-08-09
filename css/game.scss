@@ -167,6 +167,11 @@
         }
       }
     }
+    &-roll-btn {
+      background-color: #ff9d00;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
   }
 }
 
@@ -251,7 +256,6 @@
 }
 
 .game .game-container-roll-btn {
-  background-color: #8fd2fe;
   color: #ffffff;
   border: none;
   padding: 15px 50px;
