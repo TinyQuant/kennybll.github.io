@@ -18,7 +18,12 @@
 </head>
 
 <body>
-
+  <div class="alert alert-warning alert-dismissible fade hide" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
   <nav class="navbar sticky-top navbar-dark">
     <div class="d-flex justify-content-between flex-row navbar-wrapper">
       <div class="d-flex justify-content-between flex-row">
@@ -323,6 +328,10 @@
       document.execCommand("copy");
     }
     $('.referral-btn').on('click', copy);
+    setTimeout(function() {
+      $('.alert').removeClass('hide');
+      $('.alert').addClass('show');
+    }, 5000)
   </script>
 
 </body>
