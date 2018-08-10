@@ -55,7 +55,7 @@
         <div class="game-container-top-amount">
           <span>Bet Amount</span>
           <div class="game-container-top-amount-input-wrapper">
-            <img src="./eos-logo.gif" class="navbar-coin" />
+            <img src="./img/eos-logo.gif" class="navbar-coin" />
 
             <input class="game-container-top-amount-input" type="text" value="0.00000010" />
             <button class="game-container-top-amount-input-btn">
@@ -72,7 +72,7 @@
         <div class="game-container-top-profit">
           <span>Profit On Win</span>
           <div class="game-container-top-profit-wrapper">
-            <img src="./eos-logo.gif" class="navbar-coin" />
+            <img src="./img/eos-logo.gif" class="navbar-coin" />
             <div class="game-container-top-profit-amount">0.00000010</div>
           </div>
         </div>
@@ -104,37 +104,35 @@
       <div class="game-container-bottom">
         <div class="game-container-bottom-balance-eos">
           <div class="game-container-bottom-balance">
-            <img src="./eos-logo.gif" />
+            <img src="./img/eos-logo.gif" />
             <span>17</span>
             <span>.1109</span>
           </div>
-          <span class="game-container-bottom-balance-title">EOS Balance</span>
         </div>
         <div class="game-container-bottom-balance-bet">
           <div class="game-container-bottom-balance">
-            <img src="./eos-logo.gif" />
+            <img src="./img/eos-logo.gif" />
             <span>134</span>
             <span>.6800</span>
+            <i class="fa fa-question-circle game-container-bottom-bet-qm" data-toggle="modal" data-target="#betModal"></i>
           </div>
-          <span class="game-container-bottom-balance-title">BET Balance</span>
         </div>
         <div class="game-container-bottom-balances">
-            <div class="game-container-bottom-balances-eos">
-                <div class="game-container-bottom-balance">
-                  <img src="./eos-logo.gif" />
-                  <span>17</span>
-                  <span>.1109</span>
-                </div>
-                <span class="game-container-bottom-balance-title">EOS Balance</span>
-              </div>
-          <div class="game-container-bottom-balances-bet">
-              <div class="game-container-bottom-balance">
-                <img src="./eos-logo.gif" />
-                <span>134</span>
-                <span>.6800</span>
-              </div>
-              <span class="game-container-bottom-balance-title">BET Balance</span>
+          <div class="game-container-bottom-balances-eos">
+            <div class="game-container-bottom-balance">
+              <img src="./img/eos-logo.gif" />
+              <span>17</span>
+              <span>.1109</span>
             </div>
+          </div>
+          <div class="game-container-bottom-balances-bet">
+            <div class="game-container-bottom-balance">
+              <img src="./img/eos-logo.gif" />
+              <span>134</span>
+              <span>.6800</span>
+              <i class="fa fa-question-circle game-container-bottom-bet-qm" data-toggle="modal" data-target="#betModal"></i>
+            </div>
+          </div>
         </div>
         <button class="game-container-roll-btn">Roll Dice</button>
       </div>
@@ -143,7 +141,7 @@
         <div id="slider">
           <div class="ui-slider-range"></div>
           <div class="my-handle ui-slider-handle">
-              <div class="ui-slider-tooltip">50</div>
+            <div class="ui-slider-tooltip">50</div>
           </div>
         </div>
         <span>100</span>
@@ -271,7 +269,7 @@
           </button>
         </div>
         <div class="modal-body referral-body">
-          <input class="referral-name" id="referral-name" value="https://eosbet.io/dice/i/kennybennett"></input>
+          <input class="referral-name" id="referral-name" value="https://eosbet.io/dice/i/kennybennett" />
           <button class="referral-btn btn" id="referral-btn">Copy</button>
         </div>
       </div>
@@ -283,6 +281,21 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="htpModalLabel">How To Play</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body htp-body">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="betModal" tabindex="-1" role="dialog" aria-labelledby="betModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="betModalLabel">BET Tokens</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -320,9 +333,7 @@
         }
         return string;
       }
-      window.onload = function () {
-        $('.fairness-seed').html(generate_seed());
-      }
+      $('.fairness-seed').html(generate_seed());
     });
     function copy() {
       document.getElementById('referral-name').select()

@@ -282,7 +282,12 @@
 
 .game-container-bottom-balance-title, .game-container-bottom-balances-title {
   font-size: 15px;
-  color: #000000 !important;
+  color: #9b9fae !important;
+}
+
+.game-container-bottom-bet-qm {
+  margin-left: 4px;
+  cursor: pointer;
 }
 
 .game-container-roll-btn {
