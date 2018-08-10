@@ -162,8 +162,8 @@
           width: 22px;
           margin-right: 5px;
         }
-        span:last-child {
-          color: #555555;
+        span {
+          color: #000000;
         }
       }
     }
@@ -191,6 +191,10 @@
   &-bottom-bet-qm {
     margin-left: 4px;
     cursor: pointer;
+    color: #AAAAAA;
+    &:hover {
+      color: #333333;
+    }
   }
   &-roll-btn {
     order: 2;

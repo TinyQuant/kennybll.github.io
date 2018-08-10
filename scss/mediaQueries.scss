@@ -46,54 +46,6 @@
       margin-top: 20px;
     }
   }
-  .navbar-coin {
-    display: block;
-  }
-}
-
-@media (max-width: 635px) {
-  .game-container-bottom-left-bottom {
-    flex-direction: column;
-    &-left {
-      margin-right: 0px;
-    }
-    &-right-span {
-      margin-top: 20px;
-    }
-  }
-  .game-container {
-    &-bottom {
-      flex-wrap: wrap;
-    }
-    &-roll-btn {
-      order: 3;
-      margin-top: 10px;
-    }
-  }
-}
-
-@media (max-width: 655px) {
-  .navbar-coin {
-    display: none;
-  }
-  .navbar-refferals {
-    display: none !important;
-  }
-  .navbar-faq {
-    display: none !important;
-  }
-  .navbar-community {
-    display: none !important;
-  }
-  .navbar-fairness {
-    display: none !important;
-  }
-}
-
-@media (min-width: 655px) {
-  .dropdown-toggler {
-    display: none !important;
-  }
 }
 
 @media (max-width: 730px) {

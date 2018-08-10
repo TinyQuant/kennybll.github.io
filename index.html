@@ -5,15 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="./css/mytheme.css">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/index.css" />
-  <link rel="stylesheet" href="./css/nav.css" />
-  <link rel="stylesheet" href="./css/game.css" />
-  <link rel="stylesheet" href="./css/scores.css" />
-  <link rel="stylesheet" href="./css/mediaQueries.css" />
   <title>EOSBet Dice</title>
 </head>
 
@@ -28,21 +23,16 @@
     <div class="d-flex justify-content-between flex-row navbar-wrapper">
       <div class="d-flex justify-content-between flex-row">
         <a class="navbar-brand" href="#">
-          <!-- <svg class="navbar-brand-svg" width="37.5" height="25" viewBox="0 0 65 43">
-            <title>Logo</title>
-            <path d="M.4 9.98c-.376-1.618.258-1.974 1.419-.793l22.01 22.412c.778.792.52 1.434-.586 1.434h-16.5c-.549 0-1.093-.429-1.219-.971L.398 9.982m63.699 0c.376-1.618-.258-1.974-1.419-.793l-22.01 22.412c-.778.792-.52 1.434.586 1.434h16.5c.549 0 1.093-.429 1.219-.971l5.126-22.08m-58.28 28.17c0-.55.457-.995 1.01-.995h50.875c.557 0 1.01.456 1.01.995v3.577c0 .55-.457.995-1.01.995H6.829a1.01 1.01 0 0 1-1.01-.995v-3.577m11.058-20a1.991 1.991 0 0 1 0-2.821l14.24-14.239a1.991 1.991 0 0 1 2.82 0l14.24 14.239a1.991 1.991 0 0 1 0 2.821l-14.24 14.239a1.991 1.991 0 0 1-2.82 0l-14.24-14.239m26.682.622a2.5 2.5 0 1 0-3.534-3.535 2.5 2.5 0 0 0 3.534 3.535m-9-9a2.5 2.5 0 1 0-3.534-3.535 2.5 2.5 0 0 0 3.534 3.535m-9 9a2.5 2.5 0 1 0-3.534-3.535 2.5 2.5 0 0 0 3.534 3.535m9 9a2.5 2.5 0 1 0-3.534-3.535 2.5 2.5 0 0 0 3.534 3.535m0-9a2.5 2.5 0 1 0-3.534-3.535 2.5 2.5 0 0 0 3.534 3.535"
-              fill="#fff" fill-rule="nonzero"></path>
-          </svg> -->
           <span class="navbar-brand-span">EOSBet Dice</span>
         </a>
-        <button type="button" class="btn btn-link navbar-link navbar-fairness" data-toggle="modal" data-target="#fairnessModal">Fairness</button>
-        <button type="button" class="btn btn-link navbar-link navbar-community" data-toggle="modal" data-target="#communityModal">Community</button>
+        <button type="button" class="btn btn-link navbar-link d-none d-md-block d-lg-block" data-toggle="modal" data-target="#fairnessModal">Fairness</button>
+        <button type="button" class="btn btn-link navbar-link d-none d-md-block d-lg-block" data-toggle="modal" data-target="#communityModal">Community</button>
       </div>
       <div class="d-flex justify-content-between flex-row">
-        <button type="button" class="btn btn-link navbar-link navbar-refferals" data-toggle="modal" data-target="#referralModal">Referrals</button>
-        <button type="button" class="btn btn-link navbar-link navbar-faq" data-toggle="modal" data-target="#htpModal">How To Play</button>
+        <button type="button" class="btn btn-link navbar-link d-none d-md-block d-lg-block" data-toggle="modal" data-target="#referralModal">Referrals</button>
+        <button type="button" class="btn btn-link navbar-link d-none d-md-block d-lg-block" data-toggle="modal" data-target="#htpModal">How To Play</button>
       </div>
-      <button class="btn btn-link dropdown-toggler navbar-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button class="btn btn-link dropdown-toggler navbar-link d-block d-md-none d-lg-none d-xl-none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="dropdown-menu dropdown-menu-right">
@@ -60,7 +50,7 @@
         <div class="game-container-top-amount">
           <span>Bet Amount</span>
           <div class="game-container-top-amount-input-wrapper">
-            <img src="./img/eos-logo.png" class="navbar-coin" />
+            <img src="./img/eos-logo.png" class="navbar-coin d-none d-md-block d-lg-block" />
 
             <input class="game-container-top-amount-input" type="text" value="0.00000010" />
             <button class="game-container-top-amount-input-btn">
@@ -77,7 +67,7 @@
         <div class="game-container-top-profit">
           <span>Profit On Win</span>
           <div class="game-container-top-profit-wrapper">
-            <img src="./img/eos-logo.png" class="navbar-coin" />
+            <img src="./img/eos-logo.png" class="navbar-coin d-none d-md-block d-lg-block" />
             <div class="game-container-top-profit-amount">0.00000010</div>
           </div>
         </div>
@@ -106,26 +96,21 @@
         </div>
       </div>
 
-      <div class="game-container-bottom">
-        <div class="game-container-bottom-balance-eos">
-          <div class="game-container-bottom-balance">
+      <div class="game-container-bottom justify-content-around flex-wrap">
+        <div class="order-1 order-sm-1 order-md-1 col-xs-6 col-sm-3 col-md-3">
+          <div class="d-flex">
             <img src="./img/eos-logo.png" />
-            <span>17</span>
-            <span>.1109</span>
+            <span>17.1109</span>
           </div>
         </div>
-        <div class="game-container-bottom-balance-bet">
-          <div class="game-container-bottom-balance">
-            <!-- add  BET token here, add to ./img as well -->
+        <div class="order-2 order-sm-3 order-md-3 col-xs-6 col-sm-3 col-md-3">
+          <div class="d-flex">
             <img src="./img/bet-token.png" />
-            <!-- end -->
-            <span>134</span>
-            <span>.6800</span>
-            <!-- add CSS to question mark, grey normal, black hover -->
+            <span>134.6800</span>
             <i class="fa fa-question-circle game-container-bottom-bet-qm" data-toggle="modal" data-target="#betModal"></i>
           </div>
         </div>
-        <button class="game-container-roll-btn">Roll Dice</button>
+        <button class="btn btn-secondary btn-lg order-3 order-sm-2 order-md-2 col-xs-12 col-sm-4 col-md-4 mt-3 mt-sm-0">Roll Dice</button>
       </div>
       <div class="game-container-slider">
         <span>0</span>
@@ -168,7 +153,7 @@
           <span class="flex-fill-1">2</span>
           <span class="flex-fill-1">0.1000 EOS</span>
           <span class="flex-fill-1">87</span>
-          <span class="flex-fill-1 loss">-0.1000 EOS</span>
+          <span class="flex-fill-1 text-danger">-0.1000 EOS</span>
         </li>
         <li class="d-flex off">
           <span class="flex-fill-1">Sun, Aug 5 7:50PM</span>
@@ -176,7 +161,7 @@
           <span class="flex-fill-1">90</span>
           <span class="flex-fill-1">100.0000 EOS</span>
           <span class="flex-fill-1">23</span>
-          <span class="flex-fill-1 win">110.6742 EOS</span>
+          <span class="flex-fill-1 text-success">110.6742 EOS</span>
         </li>
         <li class="d-flex">
           <span class="flex-fill-1">Sun, Aug 5 10:16PM</span>
@@ -184,7 +169,7 @@
           <span class="flex-fill-1">2</span>
           <span class="flex-fill-1">0.1000 EOS</span>
           <span class="flex-fill-1">87</span>
-          <span class="flex-fill-1 loss">-0.1000 EOS</span>
+          <span class="flex-fill-1 text-danger">-0.1000 EOS</span>
         </li>
         <li class="d-flex off">
           <span class="flex-fill-1">Sun, Aug 5 7:50PM</span>
@@ -192,7 +177,7 @@
           <span class="flex-fill-1">90</span>
           <span class="flex-fill-1">100.0000 EOS</span>
           <span class="flex-fill-1">23</span>
-          <span class="flex-fill-1 win">110.6742 EOS</span>
+          <span class="flex-fill-1 text-success">110.6742 EOS</span>
         </li>
       </div>
     </div>
@@ -268,7 +253,7 @@
         <div class="modal-body">
           <div class="referral-body">
             <input class="referral-name" id="referral-name" value="https://eosbet.io/dice/i/kennybennett" />
-            <button class="referral-btn btn" id="referral-btn">Copy</button>
+            <button class="btn btn-primary" id="referral-btn">Copy</button>
           </div>
           <div>
             <br />
@@ -305,8 +290,7 @@
           </button>
         </div>
         <div class="modal-body htp-body">
-          <!-- kenny please center this and move css tag to a stylesheet -->
-          <img src="./img/bet-token.png" style="width: 65%;" />
+          <img src="./img/bet-token.png" class="modal-bettoken" />
           <h6>We are giving 10% of all BET tokens to our bettors. For every EOS you bet, you will receive 1 BET token for free!</h6>
           <h6>Token holders receive 100% of casino profits each quarter, so the more BET you own the more profit you will make. This giveaway will end soon, so place your bets now!</h6>
           <br /><br />

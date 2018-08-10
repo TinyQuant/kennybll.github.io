@@ -1,0 +1,49 @@
+// Add additional styles here. For example, overwrite certain styles or add new components.
+// Tip: You can use bootstrap's powerful mixins here!
+
+
+//.alert-myalert {
+//  @include alert-variant(#60667d, #1d1d1d, #f4fdff);
+//}
+
+//@each $color, $value in $theme-colors {
+//  .alert-#{$color} {
+//    box-shadow: 3px 3px theme-color-level($color, -3);
+//  }
+//}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.navbar.navbar-dark {
+  background-color: $navbar-dark-bg;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal * {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.modal-bettoken {
+  width: 35%;
+  margin-bottom: 15px;
+}
+
+.modal-title {
+  width: 100%;
+  text-align: center;
+  margin-right: -22px;
+}
+
+.fairness-input {
+  background-color: #f5f5f5;
+}
+
+.btn-secondary {
+  color: #ffffff;
+}
