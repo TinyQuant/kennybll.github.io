@@ -20,6 +20,11 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .scores .scores-switch button {
