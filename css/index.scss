@@ -116,4 +116,20 @@
 
 .my-handle {
   outline: none;
+  cursor: grabbing !important;
+}
+
+.alert {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  margin: 65px auto;
+  max-width: 400px;
+}
+
+.alert-warning {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #999999;
 }

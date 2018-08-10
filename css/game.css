@@ -294,6 +294,7 @@
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  cursor: pointer;
 }
 
 .game .game-container-middle-roll-title, .game .game-container-middle-roll-title2, .game .game-container-middle-payout-title, .game .game-container-middle-chance-title {
