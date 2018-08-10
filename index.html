@@ -60,7 +60,7 @@
         <div class="game-container-top-amount">
           <span>Bet Amount</span>
           <div class="game-container-top-amount-input-wrapper">
-            <img src="./img/eos-logo.gif" class="navbar-coin" />
+            <img src="./img/eos-logo.png" class="navbar-coin" />
 
             <input class="game-container-top-amount-input" type="text" value="0.00000010" />
             <button class="game-container-top-amount-input-btn">
@@ -77,7 +77,7 @@
         <div class="game-container-top-profit">
           <span>Profit On Win</span>
           <div class="game-container-top-profit-wrapper">
-            <img src="./img/eos-logo.gif" class="navbar-coin" />
+            <img src="./img/eos-logo.png" class="navbar-coin" />
             <div class="game-container-top-profit-amount">0.00000010</div>
           </div>
         </div>
@@ -109,16 +109,19 @@
       <div class="game-container-bottom">
         <div class="game-container-bottom-balance-eos">
           <div class="game-container-bottom-balance">
-            <img src="./img/eos-logo.gif" />
+            <img src="./img/eos-logo.png" />
             <span>17</span>
             <span>.1109</span>
           </div>
         </div>
         <div class="game-container-bottom-balance-bet">
           <div class="game-container-bottom-balance">
-            <img src="./img/eos-logo.gif" />
+            <!-- add  BET token here, add to ./img as well -->
+            <img src="./img/bet-token.png" />
+            <!-- end -->
             <span>134</span>
             <span>.6800</span>
+            <!-- add CSS to question mark, grey normal, black hover -->
             <i class="fa fa-question-circle game-container-bottom-bet-qm" data-toggle="modal" data-target="#betModal"></i>
           </div>
         </div>
@@ -199,7 +202,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="communityModalLabel">Community</h5>
+          <h5 class="modal-title" id="communityModalLabel">Join the EOSBet Community!</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -207,6 +210,9 @@
         <div class="modal-body community-body">
           <a target="_blank" href="https://t.me/eosbetcasino">
             <em class="fa fa-telegram community-icon"></em>
+          </a>
+          <a target="_blank" href="#">
+            <em class="fa fa-wechat community-icon"></em>
           </a>
           <a target="_blank" href="https://twitter.com/EOSBetCasino">
             <em class="fa fa-twitter community-icon"></em>
@@ -217,9 +223,6 @@
           <a target="_blank" href="https://medium.com/@eosbetcasino">
             <em class="fa fa-medium community-icon"></em>
           </a>
-          <a target="_blank" href="#">
-            <em class="fa fa-wechat community-icon"></em>
-          </a>
         </div>
       </div>
     </div>
@@ -229,7 +232,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="fairnessModalLabel">Fairness</h5>
+          <h5 class="modal-title" id="fairnessModalLabel">Provably Fair Betting</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -242,6 +245,12 @@
           </div>
           <span class="fairness-seed-title2">Current Seed</span>
           <span class="fairness-seed"></span>
+          <br />
+          <h6>Since all bets are placed through our smart contracts on the EOS blockchain, it's impossible for you to play an unfair game. Here's how:</h6>
+          <br />
+          <h6>Every bet you place with us is secured by our novel randomness generation technique. You may submit your own seed, or leave it blank. Your bet will receive a unique ID in a smart contract, which will be signed by our server with a a predetermined secret key.</h6>
+          <br />
+          <h6>This signature will be passed back to the smart contract before being verified that the correct secret signing key was used. The contract will then derive a deterministic random number from the signature, which will be used to resolve your bet.</h6>
         </div>
       </div>
     </div>
@@ -251,15 +260,22 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="referralModalLabel">Referrals</h5>
+          <h5 class="modal-title" id="referralModalLabel">Get Rewarded With Referrals!</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body referral-body">
-          <input class="referral-name" id="referral-name" value="https://eosbet.io/dice/i/kennybennett" />
-          <button class="referral-btn btn" id="referral-btn">Copy</button>
+        <div class="modal-body">
+          <div class="referral-body">
+            <input class="referral-name" id="referral-name" value="https://eosbet.io/dice/i/kennybennett" />
+            <button class="referral-btn btn" id="referral-btn">Copy</button>
+          </div>
+          <div>
+            <br />
+            <h6>Refer a friend and receive 0.5% of their bets, for life! Additionally, the receiver of the referral will get a 0.5% bonus towards their wins. There's no reason not to get referred and receiver bigger wins for each bet placed, so join our <a href="https://t.me/eosbetcasino">Telegram chat</a> and hunt for a link.</h6>
+          </div>
         </div>
+        
       </div>
     </div>
   </div>
@@ -283,12 +299,18 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="betModalLabel">BET Tokens</h5>
+          <h5 class="modal-title" id="betModalLabel">8.8 Million BET Token Giveaway!</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body htp-body">
+          <!-- kenny please center this and move css tag to a stylesheet -->
+          <img src="./img/bet-token.png" style="width: 65%;" />
+          <h6>We are giving 10% of all BET tokens to our bettors. For every EOS you bet, you will receive 1 BET token for free!</h6>
+          <h6>Token holders receive 100% of casino profits each quarter, so the more BET you own the more profit you will make. This giveaway will end soon, so place your bets now!</h6>
+          <br /><br />
+          <p style="font-size: 60%; color:grey; text-transform: uppercase;">Please note that BET tokens have zero value and could be completely worthless. They are simply a novelty, and should be considered as such.</p>
         </div>
       </div>
     </div>
