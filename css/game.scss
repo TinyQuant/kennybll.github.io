@@ -186,7 +186,11 @@
   }
   &-bottom-balance-title, &-bottom-balances-title {
     font-size: 15px;
-    color: #000000 !important;
+    color: #9b9fae !important;
+  }
+  &-bottom-bet-qm {
+    margin-left: 4px;
+    cursor: pointer;
   }
   &-roll-btn {
     order: 2;
