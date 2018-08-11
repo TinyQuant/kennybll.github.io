@@ -16,14 +16,18 @@
     justify-content: space-around;
   }
   &-icon {
-    background-color: #2b56f5;
-    color: #ffffff;
+    color: #3c3c3c;
     padding: 12.5px;
     flex: 1;
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 25px !important;
     height: 50px;
     width: 50px;
+    transition: all 0.5s;
+    &:hover {
+      background: #7a0fff;
+      color: #fff;
+    }
   }
 }
 
