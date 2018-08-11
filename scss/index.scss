@@ -24,6 +24,7 @@
     height: 50px;
     width: 50px;
     transition: all 0.5s;
+    font-family: 'FontAwesome';
     &:hover {
       background: #7a0fff;
       color: #fff;
@@ -53,7 +54,6 @@
   }
   &-seed {
     background-color: #ecedf0;
-    color: #F10260;
     padding: 5px;
     border-radius: 5px;
     &-title {
@@ -76,7 +76,6 @@
   }
   &-name {
     background-color: #ecedf0;
-    color: #F10260;
     padding: 12px;
     border-radius: 5px;
     border: 0;
@@ -121,6 +120,7 @@
 .my-handle {
   outline: none;
   cursor: grabbing !important;
+  right: -2px;
 }
 
 .alert {
