@@ -16,12 +16,14 @@
   "dependencies": {
     "bootstrap": "^4.1.1",
     "jquery": "^3.3.1",
+    "jquery-ui": "^1.12.1",
     "popper.js": "^1.14.3"
   },
   "devDependencies": {
     "autoprefixer": "^8.2.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.3",
+    "gulp-minify": "^3.1.0",
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "*",
     "gulp-sass": "^4.0.1",
