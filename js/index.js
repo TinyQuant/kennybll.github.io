@@ -4,12 +4,15 @@ $(function () {
   let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
   $("#slider").slider({
     value: 50,
-    max: 96,
-    min: 2,
+    max: 103,
+    min: -3,
     step: 1,
     slide: function (event, ui) {
+      if(ui.value < 2 || ui.value > 96) {
+        return false;
+      }
       handle.text(ui.value);
-      green.css('width', ui.value * 100 / 94 + '%');
+      green.css('right', 97 - (ui.value / 106 * 100) + '%');
     }
   });
   function generate_seed() {

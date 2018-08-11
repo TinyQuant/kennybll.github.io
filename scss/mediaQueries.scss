@@ -2,9 +2,6 @@
   .game-container-top-bet-balance, .game-container-top-space {
     display: none !important;
   }
-  .scores-table-top span:nth-child(4), .scores-table-bottom li span:nth-child(4) {
-    display: none !important;
-  }
   .game-container-middle {
     flex-direction: row;
     &-roll {
@@ -33,29 +30,5 @@
   }
   .game-container-middle-roll-title2 {
     display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .game-container-top {
-    flex-direction: column;
-    &-amount {
-      margin-right: 0px;
-    }
-    &-profit {
-      margin-top: 20px;
-    }
-  }
-}
-
-@media (max-width: 730px) {
-  .scores-table-top span:nth-child(3), .scores-table-bottom li span:nth-child(3), .scores-table-top span:nth-child(5), .scores-table-bottom li span:nth-child(5) {
-    display: none !important;
-  }
-}
-
-@media (max-width: 1200px) {
-  .scores-table-top span:nth-child(1), .scores-table-bottom li span:nth-child(1) {
-    display: none !important;
   }
 }

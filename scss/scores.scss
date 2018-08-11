@@ -1,19 +1,4 @@
-.scores {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  align-items: center;
-}
-
-.scores .scores-switch {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.scores .scores-switch button {
+.scores-inactive, .scores-active {
   justify-content: center;
   text-transform: uppercase;
   color: #9b9fae;
@@ -24,45 +9,17 @@
   background-color: #ffffff;
 }
 
-.scores .scores-active {
+.scores-active {
   border-color: #3b3e4c !important;
   color: #3b3e4c !important;
 }
 
-.scores .scores-table {
-  width: 90%;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.scores .scores-table-top span {
+.scores-table-title {
   font-size: 14px;
   color: #666b82;
 }
 
-.scores .scores-table-bottom {
-  display: flex;
-  flex-direction: column;
-}
-
-.scores .scores-table-bottom li {
-  padding: 20px 0px;
-  width: 100%;
-}
-
-.scores .scores-table-bottom li.off {
+.off-color {
   background-color: #ecedf0;
   border-radius: 5px;
-}
-
-.scores .scores-table-bottom li span {
-  text-align: center;
-}
-
-.scores .scores-table-bottom li span.loss {
-  color: #F10260;
-}
-
-.scores .scores-table-bottom li span.win {
-  color: #02F292;
 }

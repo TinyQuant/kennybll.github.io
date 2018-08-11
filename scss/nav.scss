@@ -1,14 +1,5 @@
 @import './base.scss';
 
-.navbar.navbar-dark {
-  background-color: $navbar-background-color;
-  height: 60px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-}
-
 .navbar.navbar-dark .navbar-wrapper {
   width: 100%;
 }
@@ -16,11 +7,6 @@
 .navbar.navbar-dark .navbar-brand {
   display: flex;
   align-items: center;
-}
-
-.navbar.navbar-dark .navbar-brand-svg {
-  display: block;
-  margin-top: -3px;
 }
 
 .navbar.navbar-dark .navbar-brand-span {
