@@ -13,7 +13,7 @@
     width: 100%;
     font-size: 18px;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     &-top {
       &-amount {
         &-input {
@@ -27,6 +27,7 @@
           color: #3b3e4c;
           font-size: 18px;
           outline: none;
+          background-color: #f8f8f8;
           &-btn {
             background-color: #ecedf0;
             border: none;
