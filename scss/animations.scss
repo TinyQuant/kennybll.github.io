@@ -1,0 +1,52 @@
+@keyframes lossAnimation {
+  50% {
+    opacity:1;
+  }
+  100% {
+    -webkit-transform:translateY(100%);
+    -ms-transform:translateY(100%);
+    transform:translateY(100%);
+  }
+}
+
+@keyframes winAnimation {
+  0% {
+    opacity:0;
+    -webkit-transform:translateY(100%);
+    -ms-transform:translateY(100%);
+    transform:translateY(100%);
+  }
+  50% {
+    opacity:1;
+  }
+}
+
+.balance {
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  opacity:0;
+}
+
+.winBalance {
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  opacity:0;
+  color:rgb(0,228,73) !important;
+  -webkit-animation: 1s winAnimation;
+  animation: 1s winAnimation;
+}
+
+.lossBalance {
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  opacity:0;
+  color:rgb(241,2,96) !important;
+  -webkit-animation: 1s lossAnimation;
+  animation: 1s lossAnimation;
+}
