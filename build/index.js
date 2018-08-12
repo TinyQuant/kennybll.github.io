@@ -1,4 +1,4 @@
-var interval = 500;
+var interval = 100;
 var end = false;
 var handle = $(".ui-slider-tooltip");
 var green = $(".ui-slider-range");
@@ -11,7 +11,7 @@ function rollResolved(number) {
   setTimeout(function() {
     $('.roll_btn').text("Roll Dice");
     $('.roll_btn').removeClass('animate_btn');
-  }, 2500);
+  }, 5000);
 }
 
 function generate_seed() {
@@ -29,7 +29,6 @@ function copy() {
 
 function rollProcessing() {
   if(!end) {
-    if(!(interval < 100)) interval /= 1.1;
     $('.roll_btn').text((Math.random() * 94 + 2).toFixed());
     setTimeout( rollProcessing, interval );
   } else {
@@ -78,15 +77,19 @@ $("#slider").slider({
 $('.fairness-seed').html(generate_seed());
 $('.referral-btn').on('click', copy);
 $('.roll_btn').on('click', function() {
-  interval = 500;
   end = false;
   $('.roll_btn').attr('disabled', 'true');
   setTimeout( rollProcessing, interval );
+  // Demo code
+  setTimeout( function() {rollResolved(7)}, 2500 );
+  // /Demo code
 });
 
+// Demo code
 setTimeout(function() {
   $('.alert').removeClass('hide');
   $('.alert').addClass('show');
   lossEOS('-0.0001');
   winBet('0.0001');
 }, 5000);
+// /Demo code
