@@ -1,17 +1,20 @@
 .scores-inactive, .scores-active {
   justify-content: center;
   text-transform: uppercase;
-  color: #9b9fae;
   border: none;
-  border-bottom: 2px solid #dfe0e5;
+  border-bottom: 2px solid #bbbbbb;
   display: flex;
   padding: 7px 35px;
-  background-color: #ffffff;
+  background-color: inherit;
+}
+
+.scores-inactive span {
+  color: #bbbbbb !important;
 }
 
 .scores-active {
-  border-color: #3b3e4c !important;
-  color: #3b3e4c !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 .scores-table-title {
@@ -20,6 +23,6 @@
 }
 
 .off-color {
-  background-color: #f8f8f8;
+  background-color: #292929;
   border-radius: 5px;
 }

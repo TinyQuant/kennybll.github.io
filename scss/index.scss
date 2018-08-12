@@ -4,6 +4,11 @@
   font-family: $font-family;
   font-weight: 600;
   letter-spacing: 0.5px;
+  color: #ffffff !important;
+}
+
+html, body {
+  background-color: #191919;
 }
 
 .flex-fill-1 {
@@ -38,22 +43,21 @@
     flex-direction: column;
   }
   &-input {
-    border: 1px solid #cccccc;
+    border: 1px solid #3f3e3e;
+    background-color: #4b4848;
     border-radius: 5px;
+    outline: none;
     padding: 2px;
     font-weight: 500;
     flex: 1;
     margin-right: 10px;
-    &-submit {
-      background-color: #2b56f5;
-    }
     &-wrapper {
       display: flex;
       width: 100%;
     }
   }
   &-seed {
-    background-color: #ecedf0;
+    background-color: #3F3E3E;
     padding: 5px;
     border-radius: 5px;
     &-title {
@@ -75,7 +79,7 @@
     color: #ffffff;
   }
   &-name {
-    background-color: #ecedf0;
+    background-color: #3F3E3E;
     padding: 12px;
     border-radius: 5px;
     border: 0;
@@ -103,13 +107,13 @@
   left: -7px;
   text-align: center;
   color: #ffffff;
-  background-color: #2e3782;
+  background-color: #00000088;
   padding: 1px 10px;
 }
 
 .ui-slider-tooltip::after {
   top: 100%;
-  border-top: 7px solid #2e3782;
+  border-top: 7px solid #00000088;
   position: absolute;
   content: '';
   left: 10px;
@@ -133,7 +137,6 @@
 }
 
 .alert-warning {
-  color: #000000;
-  background-color: #f8f8f8;
-  border: 1px solid #999999;
+  background-color: #4b4848;
+  border: 1px solid #000000;
 }
