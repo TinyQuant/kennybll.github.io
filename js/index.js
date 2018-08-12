@@ -7,6 +7,11 @@ let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 function rollResolved(number) {
   end = true;
   $('.roll_btn').text(number);
+  $('.roll_btn').addClass('animate_btn')
+  setTimeout(function() {
+    $('.roll_btn').text("Roll Dice");
+    $('.roll_btn').removeClass('animate_btn');
+  }, 2500);
 }
 
 function generate_seed() {
@@ -27,6 +32,8 @@ function rollProcessing() {
     if(!(interval < 100)) interval /= 1.1;
     $('.roll_btn').text((Math.random() * 94 + 2).toFixed());
     setTimeout( rollProcessing, interval );
+  } else {
+    $('.roll_btn').removeAttr('disabled');
   }
 }
 
@@ -35,14 +42,6 @@ function winBet(amount) {
   $('.betBalance').addClass('winBalance');
   setTimeout( function() {
     $('.betBalance').removeClass('winBalance');
-  }, 1000 );
-}
-
-function lossBet(amount) {
-  $('.betBalance').text(amount);
-  $('.betBalance').addClass('lossBalance');
-  setTimeout( function() {
-    $('.betBalance').removeClass('lossBalance');
   }, 1000 );
 }
 
@@ -75,12 +74,13 @@ $("#slider").slider({
     green.css('right', 97 - (ui.value / 106 * 100) + '%');
   }
 });
-$('.fairness-seed').html(generate_seed());
 
+$('.fairness-seed').html(generate_seed());
 $('.referral-btn').on('click', copy);
 $('.roll_btn').on('click', function() {
   interval = 500;
   end = false;
+  $('.roll_btn').attr('disabled', 'true');
   setTimeout( rollProcessing, interval );
 });
 

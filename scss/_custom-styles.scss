@@ -56,8 +56,14 @@
   font-size: 18px;
 }
 
-.btn-secondary:focus, .btn-secondary:active {
-  background-color: $secondary;
+.btn-secondary:focus, .btn-secondary:active, .btn-secondary:hover, .btn-secondary:disabled {
+  background-color: $secondary !important;
+  border: none;
+  color: #ffffff !important;
+}
+
+.btn-secondary:disabled {
+  opacity: .80 !important;
 }
 
 .game-container-middle-wrapper {
