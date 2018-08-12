@@ -21,6 +21,28 @@
   }
 }
 
+@keyframes btnAnimation {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.25);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate_btn {
+  animation: btnAnimation 2.5s ease-in-out;
+}
+
 .balance {
   position:absolute;
   top:0;
