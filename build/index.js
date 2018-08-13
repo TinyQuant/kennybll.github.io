@@ -2,15 +2,20 @@ var interval = 100;
 var end = false;
 var handle = $(".ui-slider-tooltip");
 var green = $(".ui-slider-range");
+var rolled = $('.rolled-number');
+rolled.hide();
 let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
-function rollResolved(number) {
+function rollResolved(number, win) {
   end = true;
-  $('.roll_btn').text(number);
-  $('.roll_btn').addClass('animate_btn')
+  $('.roll_btn').text("Roll Dice");
+  $('.rolled-number span').html(number);
+  rolled.css('right', 97 - (parseInt(number) / 106 * 100) + '%');
+  $('.rolled-number span').addClass(win === true ? "text-success" : "text-danger");
+  rolled.show().addClass('bounceInDown');
   setTimeout(function() {
-    $('.roll_btn').text("Roll Dice");
-    $('.roll_btn').removeClass('animate_btn');
+    rolled.hide();
+    $('.rolled-number span').removeClass(win === true ? "text-success" : "text-danger");
   }, 5000);
 }
 
@@ -69,7 +74,7 @@ $("#slider").slider({
     if(ui.value < 2 || ui.value > 96) {
       return false;
     }
-    handle.text(ui.value);
+    handle.text(ui.value > 9 ? ui.value : '0' + ui.value);
     green.css('right', 97 - (ui.value / 106 * 100) + '%');
   }
 });
@@ -81,7 +86,7 @@ $('.roll_btn').on('click', function() {
   $('.roll_btn').attr('disabled', 'true');
   setTimeout( rollProcessing, interval );
   // Demo code
-  setTimeout( function() {rollResolved(7)}, 2500 );
+  setTimeout( function() {rollResolved("07", true)}, 2500 );
   // /Demo code
 });
 
