@@ -8,6 +8,7 @@
   flex-direction: column;
   .nav-link {
     border-radius: 0;
+    cursor: pointer;
   }
   .nav-link.active {
     background-color: #3f3e3e;
@@ -64,7 +65,7 @@
         background-color: #3F3E3E;
       }
     }
-    &-onwin {
+    &-onwin, &-onloss {
       &-wrapper {
         background-color: #3F3E3E;
         padding: 2px;
@@ -92,6 +93,7 @@
         background-color: #4b4848;
         padding: 12px 8px;
         text-align: center;
+        cursor: pointer;
         &:last-of-type {
           width: 100%;
         }
