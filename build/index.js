@@ -90,6 +90,20 @@ $('.roll_btn').on('click', function() {
   // /Demo code
 });
 
+$('.switcher-manual').on('click', function() {
+  $('.automated').removeClass('d-block').addClass('d-none');
+  $('.manual').removeClass('d-none').addClass('d-block');
+  $(this).addClass('active');
+  $('.switcher-auto').removeClass('active');
+});
+
+$('.switcher-auto').on('click', function() {
+  $('.manual').removeClass('d-block').addClass('d-none');
+  $('.automated').removeClass('d-none').addClass('d-block');
+  $(this).addClass('active');
+  $('.switcher-manual').removeClass('active');
+});
+
 // Demo code
 setTimeout(function() {
   $('.alert').removeClass('hide');

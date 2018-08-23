@@ -23,7 +23,9 @@
     <div class="d-flex justify-content-between flex-row navbar-wrapper">
       <div class="d-flex justify-content-between flex-row">
         <a class="navbar-brand" href="#">
-          <span class="navbar-brand-span"><img src="./img/logo.png" /></span>
+          <span class="navbar-brand-span">
+            <img src="./img/logo.png" />
+          </span>
         </a>
         <button type="button" class="btn btn-link navbar-link d-none d-md-block d-lg-block" data-toggle="modal" data-target="#fairnessModal">Fairness</button>
         <button type="button" class="btn btn-link navbar-link d-none d-md-block d-lg-block" data-toggle="modal" data-target="#communityModal">Community</button>
@@ -32,7 +34,8 @@
         <button type="button" class="btn btn-link navbar-link d-none d-md-block d-lg-block" data-toggle="modal" data-target="#referralModal">Referrals</button>
         <button type="button" class="btn btn-link navbar-link d-none d-md-block d-lg-block" data-toggle="modal" data-target="#htpModal">How To Play</button>
       </div>
-      <button class="btn btn-link dropdown-toggler navbar-link d-block d-md-none d-lg-none d-xl-none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button class="btn btn-link dropdown-toggler navbar-link d-block d-md-none d-lg-none d-xl-none" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="dropdown-menu dropdown-menu-right">
@@ -46,85 +49,205 @@
 
   <div class="game">
     <div class="game-container w-90">
-      <div class="d-flex flex-wrap p-20">
-        <div class="d-flex flex-column col-12 col-600-7">
-          <span class="game-small">Bet Amount</span>
-          <div class="game-container-top-amount-input-wrapper">
-            <img src="./img/eos-logo.png" class="navbar-coin" />
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link switcher-manual active">Manual</a>
+        <a class="nav-item nav-link switcher-auto">Automated</a>
+      </nav>
+      <div class="manual">
+        <div class="d-flex flex-wrap p-20">
+          <div class="d-flex flex-column col-12 col-600-7">
+            <span class="game-small">Bet Amount</span>
+            <div class="game-container-top-amount-input-wrapper">
+              <img src="./img/eos-logo.png" class="navbar-coin" />
 
-            <input class="game-container-top-amount-input" type="number" value="0.00000010" />
-            <button class="game-container-top-amount-input-btn">
-              <span class="game-small">1/2</span>
-            </button>
-            <button class="game-container-top-amount-input-btn with-side">
-              <span class="game-small">2X</span>
-            </button>
-            <button class="game-container-top-amount-input-btn with-side">
-              <span class="game-small">MAX</span>
-            </button>
+              <input class="game-container-top-amount-input" type="number" value="0.00000010" />
+              <button class="game-container-top-amount-input-btn">
+                <span class="game-small">1/2</span>
+              </button>
+              <button class="game-container-top-amount-input-btn with-side">
+                <span class="game-small">2X</span>
+              </button>
+              <button class="game-container-top-amount-input-btn with-side">
+                <span class="game-small">MAX</span>
+              </button>
+            </div>
+          </div>
+          <div class="d-flex flex-column mt-20 mt-600-0 col-600-5">
+            <span class="game-small">Profit On Win</span>
+            <div class="game-container-top-profit-wrapper">
+              <img src="./img/eos-logo.png" class="navbar-coin" />
+              <div class="game-container-top-profit-amount">0.00000010</div>
+            </div>
           </div>
         </div>
-        <div class="d-flex flex-column mt-20 mt-600-0 col-600-5">
-          <span class="game-small">Profit On Win</span>
-          <div class="game-container-top-profit-wrapper">
-            <img src="./img/eos-logo.png" class="navbar-coin" />
-            <div class="game-container-top-profit-amount">0.00000010</div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex pl-20 pr-20 pb-20">
-        <div class="col-12">
-          <div class="game-container-middle-wrapper">
-            <div class="game-container-middle-roll">
-              <span class="game-small d-none d-sm-block">Roll Under To Win</span>
-              <span class="game-small d-block d-sm-none">Roll Under</span>
-              <div class="game-container-middle-roll-value-wrapper">
-                <span class="game-container-middle-roll-value">50&darr;</span>
+        <div class="d-flex pl-20 pr-20 pb-20">
+          <div class="col-12">
+            <div class="game-container-middle-wrapper">
+              <div class="game-container-middle-roll">
+                <span class="game-small d-none d-sm-block">Roll Under To Win</span>
+                <span class="game-small d-block d-sm-none">Roll Under</span>
+                <div class="game-container-middle-roll-value-wrapper">
+                  <span class="game-container-middle-roll-value">50&darr;</span>
+                </div>
+              </div>
+              <hr class="game-container-middle-hr" />
+              <div class="game-container-middle-payout">
+                <span class="game-small">Payout</span>
+                <span class="game-container-middle-payout-input">1.98x</span>
+              </div>
+              <hr class="game-container-middle-hr" />
+              <div class="game-container-middle-chance">
+                <span class="game-small">Win Chance</span>
+                <span class="game-container-middle-chance-input">50.00%</span>
               </div>
             </div>
-            <hr class="game-container-middle-hr" />
-            <div class="game-container-middle-payout">
-              <span class="game-small">Payout</span>
-              <span class="game-container-middle-payout-input">1.98x</span>
+          </div>
+        </div>
+
+        <div class="game-container-bottom justify-content-around flex-wrap">
+          <div class="order-1 order-sm-1 order-md-1 col-xs-6 col-sm-3 col-md-3">
+            <div class="d-flex">
+              <img src="./img/eos-logo.png" />
+              <span class="position-relative">
+                <span class="eos_balance">17.1109</span>
+                <span class="balance eosBalance">0.0000</span>
+              </span>
             </div>
-            <hr class="game-container-middle-hr" />
-            <div class="game-container-middle-chance">
-              <span class="game-small">Win Chance</span>
-              <span class="game-container-middle-chance-input">50.00%</span>
+          </div>
+          <div class="order-2 order-sm-3 order-md-3 col-xs-6 col-sm-3 col-md-3">
+            <div class="d-flex">
+              <img src="./img/bet-token.png" />
+              <span class="position-relative">
+                <span class="bet_balance">134.6800</span>
+                <span class="balance betBalance">0.0000</span>
+              </span>
+              <i class="fa fa-question-circle game-container-bottom-bet-qm" data-toggle="modal" data-target="#betModal"></i>
             </div>
+          </div>
+          <div class="order-3 order-sm-2 order-md-2 col-xs-12 col-sm-4 col-md-4 mt-3 mt-sm-0">
+            <button class="roll_btn btn btn-secondary btn-lg">&emsp;Login&emsp;</button>
           </div>
         </div>
       </div>
+      <div class="automated d-none">
+        <div class="d-flex flex-wrap p-20">
+          <div class="d-flex flex-column col-12 col-600-7">
+            <span class="game-small">Bet Amount</span>
+            <div class="game-container-top-amount-input-wrapper">
+              <img src="./img/eos-logo.png" class="navbar-coin" />
 
-      <div class="game-container-bottom justify-content-around flex-wrap">
-        <div class="order-1 order-sm-1 order-md-1 col-xs-6 col-sm-3 col-md-3">
-          <div class="d-flex">
-            <img src="./img/eos-logo.png" />
-            <span class="position-relative">
-              <span class="eos_balance">17.1109</span>
-              <span class="balance eosBalance">0.0000</span>
-            </span>
+              <input class="game-container-top-amount-input" type="number" value="0.01" />
+              <button class="game-container-top-amount-input-btn">
+                <span class="game-small">1/2</span>
+              </button>
+              <button class="game-container-top-amount-input-btn with-side">
+                <span class="game-small">2X</span>
+              </button>
+              <button class="game-container-top-amount-input-btn with-side">
+                <span class="game-small">MAX</span>
+              </button>
+            </div>
+          </div>
+          <div class="d-flex flex-column mt-20 mt-600-0 col-600-5">
+            <span class="game-small">Number Of Rolls</span>
+            <div class="game-a-container-top-number-wrapper">
+              <input type="number" value="0" class="game-a-container-top-number-input" />
+            </div>
           </div>
         </div>
-        <div class="order-2 order-sm-3 order-md-3 col-xs-6 col-sm-3 col-md-3">
-          <div class="d-flex">
-            <img src="./img/bet-token.png" />
-            <span class="position-relative">
-              <span class="bet_balance">134.6800</span>
-              <span class="balance betBalance">0.0000</span>
-            </span>
-            <i class="fa fa-question-circle game-container-bottom-bet-qm" data-toggle="modal" data-target="#betModal"></i>
+        <div class="d-flex pl-20 pr-20 pb-20">
+          <div class="col-12">
+            <div class="game-container-middle-wrapper">
+              <div class="game-container-middle-roll">
+                <span class="game-small d-none d-sm-block">Roll Under To Win</span>
+                <span class="game-small d-block d-sm-none">Roll Under</span>
+                <div class="game-container-middle-roll-value-wrapper">
+                  <span class="game-container-middle-roll-value">50&darr;</span>
+                </div>
+              </div>
+              <hr class="game-container-middle-hr" />
+              <div class="game-container-middle-payout">
+                <span class="game-small">Payout</span>
+                <span class="game-container-middle-payout-input">1.98x</span>
+              </div>
+              <hr class="game-container-middle-hr" />
+              <div class="game-container-middle-chance">
+                <span class="game-small">Win Chance</span>
+                <span class="game-container-middle-chance-input">50.00%</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="order-3 order-sm-2 order-md-2 col-xs-12 col-sm-4 col-md-4 mt-3 mt-sm-0">
-          <button class="roll_btn btn btn-secondary btn-lg">&emsp;Login&emsp;</button>
+        <div class="d-flex pl-20 pr-20 pb-20 flex-wrap">
+          <div class="d-flex flex-column col-12 col-600-7">
+            <span class="game-small">On Win</span>
+            <div class="game-a-container-onwin-wrapper">
+              <div class="game-a-container-onwin-button-bg d-flex">
+                <div class="game-a-container-onwin-button active">Reset</div>
+                <div class="game-a-container-onwin-button">Increase By:</div>
+              </div>
+              <input type="number" value="0.00" class="game-a-container-onwin-input" />
+            </div>
+          </div>
+          <div class="d-flex flex-column col-12 col-600-5 mt-20 mt-600-0">
+            <span class="game-small">Stop On Profit</span>
+            <div class="game-a-container-stop-on-p">
+              <img src="./img/eos-logo.png" class="navbar-coin" />
+              <input class="game-a-container-stop-on-p-input" type="number" value="0.00" />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex pl-20 pr-20 pb-20 flex-wrap">
+          <div class="d-flex flex-column col-12 col-600-7">
+            <span class="game-small">On Loss</span>
+            <div class="game-a-container-onwin-wrapper">
+              <div class="game-a-container-onwin-button-bg d-flex">
+                <div class="game-a-container-onwin-button active">Reset</div>
+                <div class="game-a-container-onwin-button">Increase By:</div>
+              </div>
+              <input type="number" value="0.00" class="game-a-container-onwin-input" />
+            </div>
+          </div>
+          <div class="d-flex flex-column col-12 col-600-5 mt-20 mt-600-0">
+            <span class="game-small">Stop On Loss</span>
+            <div class="game-a-container-stop-on-l">
+              <img src="./img/eos-logo.png" class="navbar-coin" />
+              <input class="game-a-container-stop-on-l-input" type="number" value="0.00" />
+            </div>
+          </div>
+        </div>
+        <div class="game-container-bottom justify-content-around flex-wrap">
+          <div class="order-1 order-sm-1 order-md-1 col-xs-6 col-sm-3 col-md-3">
+            <div class="d-flex">
+              <img src="./img/eos-logo.png" />
+              <span class="position-relative">
+                <span class="eos_balance">17.1109</span>
+                <span class="balance eosBalance">0.0000</span>
+              </span>
+            </div>
+          </div>
+          <div class="order-2 order-sm-3 order-md-3 col-xs-6 col-sm-3 col-md-3">
+            <div class="d-flex">
+              <img src="./img/bet-token.png" />
+              <span class="position-relative">
+                <span class="bet_balance">134.6800</span>
+                <span class="balance betBalance">0.0000</span>
+              </span>
+              <i class="fa fa-question-circle game-container-bottom-bet-qm" data-toggle="modal" data-target="#betModal"></i>
+            </div>
+          </div>
+          <div class="order-3 order-sm-2 order-md-2 col-xs-12 col-sm-4 col-md-4 mt-3 mt-sm-0">
+            <button class="roll_btn_a btn btn-secondary btn-lg">&emsp;Login&emsp;</button>
+          </div>
         </div>
       </div>
     </div>
     <div class="slider-wrapper">
       <span>0</span>
       <div id="slider">
-        <div class="rolled-number"><span>57</span></div>
+        <div class="rolled-number">
+          <span>57</span>
+        </div>
         <div class="ui-slider-range"></div>
         <div class="my-handle ui-slider-handle">
           <div class="ui-slider-tooltip">50</div>
@@ -224,11 +347,16 @@
           <span class="font-weight-normal mt-2">Current Seed</span>
           <span class="fairness-seed"></span>
           <br />
-          <h6>Since all bets are placed through our smart contracts on the EOS blockchain, it's impossible for you to play an unfair game. Here's how:</h6>
+          <h6>Since all bets are placed through our smart contracts on the EOS blockchain, it's impossible for you to play an
+            unfair game. Here's how:</h6>
           <br />
-          <h6>Every bet you place with us is secured by our novel randomness generation technique. You may submit your own seed, or leave it blank. Your bet will receive a unique ID in a smart contract, which will be signed by our server with a a predetermined secret key.</h6>
+          <h6>Every bet you place with us is secured by our novel randomness generation technique. You may submit your own seed,
+            or leave it blank. Your bet will receive a unique ID in a smart contract, which will be signed by our server
+            with a a predetermined secret key.</h6>
           <br />
-          <h6>This signature will be passed back to the smart contract before being verified that the correct secret signing key was used. The contract will then derive a deterministic random number from the signature, which will be used to resolve your bet.</h6>
+          <h6>This signature will be passed back to the smart contract before being verified that the correct secret signing
+            key was used. The contract will then derive a deterministic random number from the signature, which will be used
+            to resolve your bet.</h6>
         </div>
       </div>
     </div>
@@ -250,10 +378,13 @@
           </div>
           <div>
             <br />
-            <h6>Refer a friend and receive 0.5% of their bets, for life! Additionally, the receiver of the referral will get a 0.5% bonus towards their wins. There's no reason not to get referred and receiver bigger wins for each bet placed, so join our <a href="https://t.me/eosbetcasino">Telegram chat</a> and hunt for a link.</h6>
+            <h6>Refer a friend and receive 0.5% of their bets, for life! Additionally, the receiver of the referral will get
+              a 0.5% bonus towards their wins. There's no reason not to get referred and receiver bigger wins for each bet
+              placed, so join our
+              <a href="https://t.me/eosbetcasino">Telegram chat</a> and hunt for a link.</h6>
           </div>
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -269,15 +400,23 @@
         </div>
         <div class="modal-body htp-body">
           <ol>
-            <li class="text-left mb-2">Make sure you have an EOS account. For more information on how to create one, click <a class="text-secondary" href="https://medium.com/coinmonks/create-your-own-eos-account-easily-using-the-non-service-fee-dapp-signupeoseos-b15c5347f2fc" target="_blank">here</a>.</li>
-            <li class="text-left mb-2">If you haven’t already, download and install <a class="text-secondary" href="https://get-scatter.com/" target="_blank">Scatter</a>, an EOS wallet that facilitates interaction between users and dApps.</li>
+            <li class="text-left mb-2">Make sure you have an EOS account. For more information on how to create one, click
+              <a class="text-secondary" href="https://medium.com/coinmonks/create-your-own-eos-account-easily-using-the-non-service-fee-dapp-signupeoseos-b15c5347f2fc"
+                target="_blank">here</a>.</li>
+            <li class="text-left mb-2">If you haven’t already, download and install
+              <a class="text-secondary" href="https://get-scatter.com/" target="_blank">Scatter</a>, an EOS wallet that facilitates interaction between users and dApps.</li>
             <li class="text-left mb-2">Set your BET AMOUNT. This is the amount of EOS you will be wagering.</li>
             <li class="text-left mb-2">Adjust the slider to change your chance of winning.</li>
             <li class="text-left mb-2">Click ROLL DICE to place your bet.</li>
             <li class="text-left mb-2">If your number is lower than your ROLL UNDER TO WIN number, you win!</li>
-            <li class="text-left mb-2">If you get a notice that your transaction failed, please check that you have enough CPU & bandwidth to make the transaction! Soon, we will be delegating user’s CPU from the EOSBet CPU pool. Currently, however, you have to supply these resources on your own. Please use <a class="text-secondary" href="https://eostoolkit.io" target="_blank">EOSToolkit</a> to make any changes to your account!</li>
-            <p class="text-left">You can view your EOS and BET token balances next to the ROLL DICE button. The table below the slider bar shows recent bets from all players across the world.</p>
-            <p class="text-left">Still have questions? Reach out to us at <a class="text-secondary" href="mailto:support@eosbet.io" target="_blank">support@eosbet.io</a> and we’ll be happy to help!</p>
+            <li class="text-left mb-2">If you get a notice that your transaction failed, please check that you have enough CPU & bandwidth to make the
+              transaction! Soon, we will be delegating user’s CPU from the EOSBet CPU pool. Currently, however, you have
+              to supply these resources on your own. Please use
+              <a class="text-secondary" href="https://eostoolkit.io" target="_blank">EOSToolkit</a> to make any changes to your account!</li>
+            <p class="text-left">You can view your EOS and BET token balances next to the ROLL DICE button. The table below the slider bar shows
+              recent bets from all players across the world.</p>
+            <p class="text-left">Still have questions? Reach out to us at
+              <a class="text-secondary" href="mailto:support@eosbet.io" target="_blank">support@eosbet.io</a> and we’ll be happy to help!</p>
           </ol>
         </div>
       </div>
@@ -296,9 +435,12 @@
         <div class="modal-body htp-body">
           <img src="./img/bet-token.png" class="modal-bettoken" />
           <h6>We are giving 10% of all BET tokens to our bettors. For every EOS you bet, you will receive 1 BET token for free!</h6>
-          <h6>Token holders receive 100% of casino profits each quarter, so the more BET you own the more profit you will make. This giveaway will end soon, so place your bets now!</h6>
-          <br /><br />
-          <p style="font-size: 60%; color:grey; text-transform: uppercase;">Please note that BET tokens have zero value and could be completely worthless. They are simply a novelty, and should be considered as such.</p>
+          <h6>Token holders receive 100% of casino profits each quarter, so the more BET you own the more profit you will make.
+            This giveaway will end soon, so place your bets now!</h6>
+          <br />
+          <br />
+          <p style="font-size: 60%; color:grey; text-transform: uppercase;">Please note that BET tokens have zero value and could be completely worthless. They are simply a novelty, and should
+            be considered as such.</p>
         </div>
       </div>
     </div>
