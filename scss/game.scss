@@ -9,9 +9,10 @@
   .nav-link {
     border-radius: 0;
     cursor: pointer;
+    background-color: #3f3e3e;
   }
   .nav-link.active {
-    background-color: #3f3e3e;
+    background-color: #4b4848;
   }
   .nav-link:first-of-type {
     border-top-left-radius: 5px;
@@ -91,16 +92,16 @@
         font-weight: 200;
         border-radius: 5px;
         background-color: #4b4848;
-        padding: 12px 8px;
+        padding: 12px 0px;
         text-align: center;
         cursor: pointer;
-        &:last-of-type {
-          width: 100%;
+        width: 100px;
+        &:first-of-type {
+          width: 60px;
         }
         &-bg {
           background-color: #4b4848;
           border-radius: 5px;
-          width: 100%;
         }
         &.active {
           background-color: $primary;
