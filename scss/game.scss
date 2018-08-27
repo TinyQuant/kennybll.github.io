@@ -94,6 +94,7 @@
         background-color: #4b4848;
         padding: 12px 0px;
         text-align: center;
+        text-transform: uppercase;
         cursor: pointer;
         width: 100px;
         &:first-of-type {
@@ -128,6 +129,13 @@
         font-size: 18px;
         outline: none;
         background-color: #4b4848;
+        &-btn {
+          background-color: #3F3E3E;
+          border: none;
+          cursor: pointer;
+          padding: 8px 15px;
+          outline: none;
+        }
       }
     }
   }

@@ -31,6 +31,7 @@
         <button type="button" class="btn btn-link navbar-link d-none d-md-block d-lg-block" data-toggle="modal" data-target="#communityModal">Community</button>
       </div>
       <div class="d-flex justify-content-between flex-row">
+        <button type="button" class="btn btn-link navbar-link lang-toggler"><img src="img/flag-en.jpg" /></button>
         <button type="button" class="btn btn-link navbar-link d-none d-md-block d-lg-block" data-toggle="modal" data-target="#referralModal">Referrals</button>
         <button type="button" class="btn btn-link navbar-link d-none d-md-block d-lg-block" data-toggle="modal" data-target="#htpModal">How To Play</button>
       </div>
@@ -124,7 +125,7 @@
               <i class="fa fa-question-circle game-container-bottom-bet-qm" data-toggle="modal" data-target="#betModal"></i>
             </div>
           </div>
-          <div class="order-3 order-sm-2 order-md-2 col-xs-12 col-sm-4 col-md-4 mt-3 mt-sm-0">
+          <div class="order-3 order-sm-2 order-md-2 col-xs-12 col-sm-4 col-md-4 mt-3 mt-sm-0 w-100">
             <button class="roll_btn btn btn-secondary btn-lg">&emsp;Login&emsp;</button>
           </div>
         </div>
@@ -152,6 +153,9 @@
             <span class="game-small">Amount To Deposit</span>
             <div class="game-a-container-top-number-wrapper">
               <input type="number" value="0" class="game-a-container-top-number-input" />
+              <button class="game-a-container-top-number-input-btn">
+                <span class="game-small">Max</span>
+              </button>
             </div>
           </div>
         </div>
@@ -184,10 +188,11 @@
             <div class="game-a-container-onwin-wrapper d-flex flex-column flex-600-row w-100">
               <div class="game-a-container-onwin-button-bg d-flex w-100 flex-column flex-600-row">
                 <div class="game-a-container-onwin-button onwin-reset w-100 active">Reset</div>
-                <div class="game-a-container-onwin-button onwin-increase w-100">Increase By</div>
-                <div class="game-a-container-onwin-button onwin-decrease w-100">Decrease By</div>
+                <div class="game-a-container-onwin-button onwin-increase w-100">Increase</div>
+                <div class="game-a-container-onwin-button onwin-decrease w-100">Decrease</div>
               </div>
-              <input type="number" value="0.00" class="game-a-container-onwin-input" />
+              <input type="number" step="0.01" value="0.00" class="game-a-container-onwin-input" />
+              <span class="pr-3">%</span>
             </div>
           </div>
         </div>
@@ -197,10 +202,11 @@
             <div class="game-a-container-onloss-wrapper d-flex flex-column flex-600-row w-100">
               <div class="game-a-container-onloss-button-bg d-flex w-100 flex-column flex-600-row">
                 <div class="game-a-container-onloss-button onloss-reset active w-100">Reset</div>
-                <div class="game-a-container-onloss-button onloss-increase w-100">Increase By</div>
-                <div class="game-a-container-onloss-button onloss-decrease w-100">Decrease By</div>
+                <div class="game-a-container-onloss-button onloss-increase w-100">Increase</div>
+                <div class="game-a-container-onloss-button onloss-decrease w-100">Decrease</div>
               </div>
-              <input type="number" value="0.00" class="game-a-container-onloss-input" />
+              <input type="number" step="0.01" value="0.00" class="game-a-container-onloss-input" />
+              <span class="pr-3">%</span>
             </div>
           </div>
         </div>
@@ -240,7 +246,7 @@
               <i class="fa fa-question-circle game-container-bottom-bet-qm" data-toggle="modal" data-target="#betModal"></i>
             </div>
           </div>
-          <div class="order-3 order-sm-2 order-md-2 col-xs-12 col-sm-4 col-md-4 mt-3 mt-sm-0">
+          <div class="order-3 order-sm-2 order-md-2 col-xs-12 col-sm-4 col-md-4 mt-3 mt-sm-0 w-100">
             <button class="roll_btn_a btn btn-secondary btn-lg">&emsp;Login&emsp;</button>
           </div>
         </div>
